@@ -1,0 +1,65 @@
+// підключення шрифтів
+@font-face {
+  font-family: 'FilmP3';
+  src: url('../fonts/FilmP3-Bold-700.ttf') format('ttf');
+  // src: url(../fonts/Montserrat-Light.woff), url(../fonts/Montserrat-Light.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Light-300.ttf') format('ttf');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular-400.ttf') format('ttf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium-500.ttf') format('ttf');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold-600.ttf') format('ttf');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold-700.ttf') format('ttf');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TimesNewRoman';
+  src: url('../fonts/TimesNewRoman-Regular-400.ttf') format('ttf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TimesNewRoman';
+  src: url('../fonts/TimesNewRoman-Bold-700.ttf') format('ttf');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}

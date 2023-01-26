@@ -1,0 +1,244 @@
+// визначення змінних
+:root {
+    // шрифт
+    --font-main: 'Montserrat', sans-serif;
+    --font-secondary: 'TimesNewRoman', sans-serif;
+    --font-logo: 'FilmP3', sans-serif;
+
+    // кольор
+    --color-akzent-yellow: #f3c653;
+    --color-btn: rgba(0, 0, 0, 0.4);
+
+    // перехід
+    --transition-slow: 750ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+// скидання налаштувань браузера
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+// базові параметри зображень
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// приховування тексту
+.hiden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+// налаштування контейнерів
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    .container {
+        max-width: 414px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        outline: 1px solid red;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        max-width: 1024px;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+}
+
+// базове оформлення кнопок ЗАБРОНЮВАТИ, ПЕРЕГЛЯНУТИ, ДЕТАЛЬНІШЕ
+.btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: var(--color-akzent-yellow);
+
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+// оформлення кнопок ЗАБРОНЮВАТИ
+.btn-book {
+    background-color: var(--color-btn);
+}
+
+.btn-book__black {
+    background-color: #000000;
+}
+
+// оформлення кнопки ПЕРЕГЛЯНУТИ МЕНЮ
+.btn-look-menu {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    background-color: var(--color-btn);
+}
+
+// оформлення кнопки ПЕРЕГЛЯНУТИ ЦІНУ
+.btn-look-price {
+    padding-left: 37px;
+    padding-right: 37px;
+
+    background-color: var(--color-btn);
+}
+
+.btn-look-price__black {
+    padding-left: 37px;
+    padding-right: 37px;
+
+    background-color: #000000;
+}
+
+// оформлення кнопки ДЕТАЛЬНІШЕ
+.btn-details {
+    padding-left: 64px;
+    padding-right: 64px;
+
+    background-color: #000000;
+}
+
+// оформлення кнопки БРОНЮВАННЯ (для tablet и desktop)
+.btn-order {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 38px;
+    padding-right: 38px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    color: #ffffff;
+
+    border: 1px solid var(--color-akzent-yellow);
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+// оформлення кнопки БРОНЮВАННЯ (для mobile)
+.btn-order__mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 43px;
+    padding-right: 43px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(24 / 20);
+    color: #ffffff;
+
+    border: 1px solid var(--color-akzent-yellow);
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+// оформлення кнопки БРОНЮВАННЯ у модальному вікні (для tablet и desktop)
+.btn-order-modal {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 117px;
+    padding-right: 117px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    color: #ffffff;
+
+    border: 1px solid var(--color-akzent-yellow);
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+// оформлення кнопки БРОНЮВАННЯ у модальному вікні (для mobile)
+.btn-order-modal__mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 43px;
+    padding-right: 43px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    color: #ffffff;
+
+    border: 1px solid var(--color-akzent-yellow);
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+// ПІДКЛЮЧЕННЯ ІКОНОК:
+// геолокація
+// #location-pin
+
+// телефон
+// #phone
+
+// сціальні мережі
+// #twitter
+// #facebook
+// #instagram
+
+// стрілочки
+// #arrow-right
+// #arrow-left
+// #arrow-down
