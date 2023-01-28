@@ -1,170 +1,182 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    opacity: 1;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
 }
 
-// .backdrop.is-hidden {
-//     opacity: 0;
-//     pointer-events: none;
-//     visibility: hidden;
-// }
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 
 .modal {
-    width: 100%;
-    height: 668px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 60px 15px;
-    border-radius: 2px;
-    // border: 1px solid #F3C653;
-    background-color: #FFFDEE;
-    opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    @media screen and (min-width: 414px) {
-        max-width: 414px;
-    }
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+  width: 100%;
 
-    @media screen and (min-width: 1024px) {
-        max-width: 712px;
-        padding-left: 60px;
-        padding-right: 60px;
-        height: 522px;
-    }
+  border-radius: 2px;
+  background-color: var(--accent-background);
+
+  opacity: 1;
+
+  @media screen and (min-width: 320px) {
+    max-width: 414px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 712px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
-// .backdrop.is-hidden .modal {
-//     transform: translate(-50%, -50%) scale(0.5);
-//     opacity: 0;
-//     visibility: visible;
-// }
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    visibility: visible;
+}
 
 .close-button {
-    position: absolute;
-    padding: 0;
-    top: 0;
-    right: 0;
-    transform: translate(-66%, 66%);
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  transform: translate(-66%, 66%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .icon-cross {
-    stroke: black;
+  stroke: #000000;
 }
 
 .booking-offer {
-    display: block;
-    text-align: center;
-    font-family: var(--font-secondary);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
+  display: block;
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
 
-    @media screen and (min-width: 1024px) {
-        font-size: 40px;
-        line-height: 1.15;
-    }
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: 1.15;
+  }
 }
 
+// позиціонування обгортки полів введення
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-    row-gap: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  row-gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
-    @media screen and (min-width: 1024px) {
-        flex-direction: row;
-        row-gap: 28px;
-        column-gap: 16px;
-    }
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    row-gap: 28px;
+    column-gap: 16px;
+  }
 }
 
 .form-set .form-field {
-    width: 100%;
+  width: 100%;
 
-    @media screen and (min-width: 1024px) {
-        width: calc((100% - 16px) / 2);
-    }
+  @media screen and (min-width: 1024px) {
+    width: calc((100% - 16px) / 2);
+  }
 }
 
 .area-name {
-    padding-left: 12px;
-    color: var(--style-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+  margin-left: 12px;
+  color: var(--style-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
 
-    @media screen and (min-width: 1024px) {
-        font-size: 16px;
-        line-height: 1.25;
-    }
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .form-set .input {
-    display: block;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 12px;
-    border-radius: 2px;
-    background-color: transparent;
-    margin-bottom: 8px;
-    width: 100%;
-    border: 1px solid #C79002;
+  display: block;
+  margin-bottom: 8px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 12px;
+  padding-right: 12px;
 
-    font-family: var(--font-secondary);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.05em;
-    color: #808080;
+  width: 100%;
+  height: 54px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid var(--style-text-color);
 
-    @media screen and (min-width: 1024px) {
-        font-size: 24px;
-        line-height: 1.16;
-    }
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.05em;
+  color: #808080;
+  outline: none;
+
+  @media screen and (min-width: 1024px) {
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+// зміна кольору поля при фокусі
+.input:focus {
+  border: 2px solid var(--color-text-btn);
 }
 
 .button-booking-table {
-    background-color: #000000;
-    border: 1px solid #F3C653;
-    border-radius: 2px;
-    color: var(--text-color-bg);
-    width: 100%;
-    padding: 20px 42px;
+  background-color: #000000;
+  border: 1px solid var(--color-text-btn);
+  border-radius: 2px;
+  color: var(--text-color-bg);
+  width: 100%;
+  padding: 20px 42px;
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 
-    transition: background-color var(--transition-fast),
+  transition: background-color var(--transition-fast),
     color var(--transition-fast);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    @media screen and (min-width: 1024px) {
-        padding: 18px 116px;
-        font-size: 24px;
-    }
+  @media screen and (min-width: 1024px) {
+    padding: 18px 116px;
+    font-size: 24px;
+  }
 }
 
 .button-booking-table:hover,
 .button-booking-table:focus {
-    background-color:var(--color-text-btn);
-    color: black;
+  background-color: var(--color-text-btn);
+  color: #000000;
 }
