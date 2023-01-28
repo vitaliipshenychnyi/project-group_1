@@ -1,5 +1,4 @@
 .room-amenities {
-  margin: 0 auto;
   padding: 32px 12px;
   color: #7a7a7a;
 }
@@ -30,18 +29,17 @@
 }
 
 .room-amenities__title {
-  font-family: 'Times New Roman';
-  font-style: normal;
+  font-family: var(--font-secondary);
   font-weight: 400;
   font-size: 32px;
-  line-height: 37px;
+  line-height: calc(37 / 32);
   margin-bottom: 16px;
   color: var(--footer-background);
   text-transform: uppercase;
 }
 
 .room-amenities__title-content {
-  font-family: 'Montserrat';
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -62,10 +60,10 @@
 }
 
 .room-amenities__content-title {
-  font-family: 'Times New Roman';
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: calc(28 / 24);
   color: var(--footer-background);
   margin-bottom: 16px;
   text-transform: uppercase;
@@ -97,10 +95,10 @@
 
 .room-amenities__content-text {
   display: block;
-  font-family: 'Montserrat';
+  font-family: var(--font-main);
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: calc(20px / 16px);
   letter-spacing: 0.02em;
 }
 
@@ -121,17 +119,17 @@
 @media screen and (min-width: 1024px) {
   .room-amenities__button {
     margin-bottom: 32px;
-    display: block;      // щоб нічого не зламалось
+    display: block;  
     margin-left: auto;
     margin-right: 0;
   }
 }
 
 .room-amenities__link {
-  font-family: 'Montserrat';
+  font-family: var(--font-main);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: calc(20 / 16);
   letter-spacing: 0.02em;
   
   display: flex;
@@ -146,7 +144,7 @@
 @media screen and (min-width: 1024px) {
   .room-amenities__link {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: calc(24 / 20);
     justify-content: end;
   }
 }
@@ -156,34 +154,3 @@
   color: var(--color-text-btn);
   fill: var(--color-text-btn);
 }
-
-// .btn-order-new {
-//   cursor: pointer;
-//   text-align: center;
-//   color: #ffffff;
-//   text-transform: uppercase;
-//   border-radius: 25px;
-//   padding: 20px 43px;
-//   font-size: 20px;
-//   font-weight: 500;
-//   line-height: calc(24 / 20);
-//   display: block;            // щоб нічого не зламалось
-//   background-color: #000000;
-//   border: 1px solid #f3c653;
-//   transition: background-color .30s cubic-bezier(.4, 0, .2, 1), border .30s cubic-bezier(.4, 0, .2, 1);
-// }
-
-// @media screen and (min-width: 1024px) {
-//   .btn-order-new {
-//     padding: 18px 38px;
-//     font-size: 24px;
-//     font-weight: 500;
-//     line-height: calc(29 / 24);
-//   }
-// }
-
-// .btn-order-new:hover,
-// .btn-order-new:focus {
-//   background-color: #f3c653;
-//   color: #000000;
-// }
