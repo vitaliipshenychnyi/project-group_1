@@ -1,0 +1,155 @@
+.header {
+  position: relative;
+}
+
+// позиціонування header
+.header-wrapper {
+  position: absolute;
+  width: calc(100% - 30px);
+  left: 15px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-wrapper {
+    padding-top: 24px;
+    padding-bottom: 33px;
+    width: calc(100% - 94px);
+    left: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-wrapper {
+    width: calc(100% - 170px);
+    left: 85px;
+  }
+}
+
+// стилізація логотип-посилання
+.logo {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(39 / 36);
+  letter-spacing: 0.3em;
+  color: var(--text-color-bg);
+  padding-right: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+  }
+}
+
+// центрування навігаційного блоку
+.nav {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .nav {
+    margin-right: auto;
+  }
+}
+
+// позиціонування навігаційного блоку
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:first-child {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__item:first-child {
+    margin-right: 72px;
+  }
+}
+
+// стилізація елементів навігаційного блоку
+.nav__link-page {
+  margin-right: 6px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--color-text-btn);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__link-page {
+    margin-right: 32px;
+
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+
+.nav__phone {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  fill: var(--color-text-btn);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__phone {
+    padding: 8px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .phone-number {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .phone-number {
+    margin-left: 8px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: var(--text-color-bg);
+  }
+}
+
+// позиціонування списку посилань на соціальні мережі
+@media screen and (max-width: 1279px) {
+  .header__social-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__social-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+// стилізація елементів списку посилань на соціальні мережі
+.social-icon {
+  fill: var(--color-text-btn);
+}

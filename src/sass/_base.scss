@@ -83,23 +83,38 @@ img {
 
   font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  color: var(--color-akzent-yellow);
+  color: var(--color-text-btn);
 
-  border: 2px solid #ffffff;
+  border: 2px solid var(--text-color-bg);
   border-radius: 25px;
 
   cursor: pointer;
+
+  transition: background-color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--text-color-bg);
+  border-color: var(--color-text-btn);
 }
 
 // оформлення кнопок ЗАБРОНЮВАТИ
 .btn-book {
+  padding-left: 24px;
+  padding-right: 24px;
+
   background-color: var(--color-btn);
 }
 
 .btn-book__black {
+  padding-left: 24px;
+  padding-right: 24px;
+
   background-color: #000000;
 }
 
