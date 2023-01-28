@@ -1,33 +1,39 @@
 .room-amenities {
-  padding: 32px 12px;
+  background-color: var(--accent-background);
   color: #7a7a7a;
 }
 
-@media screen and (min-width: 1024px) {
-    .room-amenities {
-      padding: 48px 47px 40px 47px;
-    }
+// додаткові налаштування контейнеру
+.room-amenities-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-@media screen and (min-width: 1280px) {
-  .room-amenities {
-    padding: 48px 198px 48px 85px;
-  }
-}
-
-
 @media screen and (min-width: 1024px) {
-  .room-amenities__align {
-    padding-right: 50px;
+  .room-amenities-container {
+    padding-top: 48px;
+    padding-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .room-amenities__align {
-    padding-right: 38px;
+  .room-amenities-container {
+    padding-bottom: 48px;
   }
 }
 
+// обгортка текстового контенту
+.room-amenities__wrapper-text {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .room-amenities__wrapper-text {
+    margin-bottom: 40px;
+  }
+}
+
+// налаштування головного заголовку
 .room-amenities__title {
   font-family: var(--font-secondary);
   font-weight: 400;
@@ -38,6 +44,7 @@
   text-transform: uppercase;
 }
 
+// налаштування головного абзацу
 .room-amenities__title-content {
   font-family: var(--font-main);
   font-style: normal;
@@ -54,11 +61,12 @@
   }
 }
 
-
-.room-amenities__content {
+.room-amenities__content:not(:last-child) {
   margin-bottom: 32px;
 }
 
+
+// налаштування заголовків
 .room-amenities__content-title {
   font-family: var(--font-secondary);
   font-weight: 700;
@@ -70,29 +78,28 @@
 }
 
 
+// позиціонування абзаців
+.room-amenities__content-blok {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 @media screen and (min-width: 1024px) {
   .room-amenities__content-blok {
-    display: flex;
+    flex-direction: row;
     gap: 80px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .room-amenities__content-blok {
-   gap: 159px;
+    gap: 159px;
   }
 }
 
-.room-amenities__content-blok>.room-amenities__content-text {
-  margin-bottom: 12px;
-}
 
-@media screen and (min-width: 1024px) {
-  .room-amenities__content-blok>.room-amenities__content-text {
-    margin-bottom: 0;
-  }
-}
-
+// налаштування абзаців
 .room-amenities__content-text {
   display: block;
   font-family: var(--font-main);
@@ -108,10 +115,7 @@
   }
 }
 
-.room-amenities__blok-link {
-  padding-top: 8px;
-}
-
+// позиціонування кнопки button
 .room-amenities__button {
   margin-bottom: 20px;
 }
@@ -119,24 +123,26 @@
 @media screen and (min-width: 1024px) {
   .room-amenities__button {
     margin-bottom: 32px;
-    display: block;  
+    display: block;
     margin-left: auto;
     margin-right: 0;
   }
 }
 
+
+// налаштування та позиціонування посилання
 .room-amenities__link {
   font-family: var(--font-main);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  
+
   display: flex;
   gap: 16px;
   align-items: center;
   justify-content: center;
- 
+
   color: var(--style-text-color);
   fill: var(--style-text-color);
 }
