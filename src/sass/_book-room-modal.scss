@@ -44,3 +44,16 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
 }
+
+.modal-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    width: 24px;
+    height: 24px;
+    border: transparent;
+
+    cursor: pointer;
+    fill: #000000;
+}
