@@ -3,10 +3,17 @@
   padding-top: 18px;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 1023px) {
+  .about-hotel {
+    overflow: hidden;
+  }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .about-hotel {
     padding-top: 120px;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -18,11 +25,6 @@
 
 .container.hotel-div {
   position: relative;
-}
-@media screen and (max-width: 1023px) {
-  .container.hotel-div {
-    overflow: hidden;
-  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -115,10 +117,11 @@
   border-radius: 2px;
   overflow: hidden;
 }
-@media screen and (max-width: 1023px) {
-  .tumba.inter-room {
-    max-width: 244px;
-  }
+
+.tumba.inter-room {
+  max-width: 244px;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .tumba.inter-room {
@@ -131,11 +134,12 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .tumba.interior {
-    max-width: 200px;
-  }
+.tumba.interior {
+  max-width: 200px;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .tumba.interior {
     max-width: 350px;
@@ -158,13 +162,12 @@
   .hotel-room-div {
     justify-content: flex-end;
     gap: 48px;
-    margin-bottom: 222px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .hotel-room-div {
     align-items: flex-start;
-    margin-bottom: 139px;
   }
 }
 
@@ -184,63 +187,142 @@
   }
 }
 
-.slider-list {
-  display: flex;
+// позиціонування контейнер слайдеру
+.test_new {
+  position: absolute;
+  bottom: 52px;
+  left: -184px;
 }
-@media screen and (max-width: 1023px) {
-  .slider-list {
-    gap: 20px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .slider-list {
-    position: absolute;
-    bottom: 56px;
 
-    gap: 40px;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+@media screen and (min-width: 1024px) {
+  .test_new {
+    bottom: 64px;
+    left: 47px;
+    width: 428px;
   }
 }
+
 @media screen and (min-width: 1280px) {
-  .slider-list {
-    position: absolute;
-    bottom: 62px;
-
-    gap: 30px;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+  .test_new {
+    bottom: 118px;
+    left: 85px;
+    width: 548px;
   }
 }
 
-.tumba.foto-slider {
-  margin-top: 32px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+// налаштування розмірів слайдеру для mobile
+.swiper {
+  height: 245px !important;
+  width: 530px !important;
 }
-@media screen and (max-width: 1023px) {
-  .slider-list > li {
-    width: 245px;
-    transform: translateX(-120px);
+
+@media screen and (min-width: 1024px) {
+  .swiper {
+    height: 194px !important;
+    width: 428px !important;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .slider-list > li {
-    width: 194px;
-  }
-}
+
 @media screen and (min-width: 1280px) {
-  .slider-list > li {
-    width: 254px;
+  .swiper {
+    height: 254px !important;
+    width: 548px !important;
   }
 }
 
-.slider-icon-div {
+// стилізація зображень слайдеру
+.swiper-slide img {
+  border-radius: 2px;
+  width: 100% !important;
+}
+
+// позиціонування нових кнопок слайдера
+.swiper-btn-wrapper_new {
   display: flex;
-  gap: 34px;
+  gap: 32px;
+  margin-top: 297px;
+  // justify-content: end;
 }
-.icon-slider {
-  width: 32px;
-  height: 32px;
+
+@media screen and (min-width: 1024px) {
+  .swiper-btn-wrapper_new {
+    margin-top: 198px;
+  }
 }
+
+// стилізація нових кнопок слайдера
+.swiper-button-next_new,
+.swiper-button-prev_new {
+  padding: 0;
+
+  fill: #000000;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.swiper-button-next_new:hover,
+.swiper-button-next_new:focus,
+.swiper-button-next_new:active,
+.swiper-button-prev_new:hover,
+.swiper-button-prev_new:focus,
+.swiper-button-prev_new:active {
+  fill: #f3c653;
+}
+
+// ++++++++++ПОТІМ ВИДАЛИТИ+++++++++
+// .slider-list {
+//   display: flex;
+//   gap: 20px;
+// }
+
+// @media screen and (min-width: 1024px) and (max-width: 1279px) {
+//   .slider-list {
+//     position: absolute;
+//     bottom: 56px;
+
+//     gap: 40px;
+//     flex-direction: row-reverse;
+//     justify-content: flex-end;
+//   }
+// }
+// @media screen and (min-width: 1280px) {
+//   .slider-list {
+//     bottom: 62px;
+
+//     gap: 30px;
+//   }
+// }
+
+// .tumba.foto-slider {
+//   margin-top: 32px;
+//   margin-bottom: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// @media screen and (max-width: 1023px) {
+//   .slider-list > li {
+//     width: 245px;
+//     transform: translateX(-120px);
+//   }
+// }
+// @media screen and (min-width: 1024px) and (max-width: 1279px) {
+//   .slider-list > li {
+//     width: 194px;
+//   }
+// }
+// @media screen and (min-width: 1280px) {
+//   .slider-list > li {
+//     width: 254px;
+//   }
+// }
+
+// .slider-icon-div {
+//   display: flex;
+//   gap: 34px;
+// }
+// .icon-slider {
+//   width: 32px;
+//   height: 32px;
+// }
