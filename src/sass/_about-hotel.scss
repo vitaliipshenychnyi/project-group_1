@@ -1,147 +1,252 @@
 .about-hotel {
-    background-color: var(--accent-background);
-    padding-top: 18px;
-    padding-bottom: 20px;
+  background-color: var(--accent-background);
+  padding-top: 18px;
+  padding-bottom: 20px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {.about-hotel{padding-top: 120px; padding-bottom: 40px;}}
-@media screen and (min-width: 1280px) {.about-hotel {padding-top: 120px;  padding-bottom: 58px; }}
-
-.container.hotel-div {
-    position: relative;
-}
-@media screen and (max-width: 1023px) {    .container.hotel-div {overflow: hidden;}}
-
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    .inter-room { position: absolute;
-    top: -120px;
-    left: 112px;}
-}
-@media screen and (min-width: 1280px){
-        .inter-room {
-            position: absolute;
-            top: -120px;
-            left: 180px;
-        }
-    }
-.title-div { margin-left: auto;
-    
-    padding-bottom: 28px;
-    max-width: 242px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {.title-div{
-    padding-bottom: 142px;
-    max-width: 419px;}
-}
-@media screen and (min-width: 1280px) {.title-div {
-        padding-bottom: 162px;
-        max-width: 488px;    }
-}
-.about-hotel-text {
-    font-family: var(--font-secondary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-    color: #B4B4B4;
-}
-@media screen and (min-width: 1024px)  {.about-hotel-text{font-size: 32px;}}
-
-.logo-text {margin-top: 6px;
-    font-family: var(--font-logo);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.1;
-    letter-spacing: 0.3em;
-}
-.hotel-text { margin-top: 18px;
-    font-family: var(--font-main);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    
-    color: #7A7A7A;
-}
-@media screen and (min-width: 1024px) { .hotel-text {font-size: 16px; margin-top: 24px;}}
-
-.tumba {
-    background: #DADADA;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    overflow: hidden;
-}
-@media screen and (max-width: 1023px) { .tumba { max-width: 244px;}}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {.tumba { max-width: 400px;  }}
-@media screen and (min-width: 1280px) { .tumba {  max-width: 460px;    } }
-
-@media screen and (max-width: 1023px) { .tumba.interior { max-width: 200px; }}
-@media screen and (min-width: 1024px) and (max-width: 1279px) { .tumba.interior { max-width: 350px; }}
-@media screen and (min-width: 1280px) { .tumba.interior { max-width: 460px; }}
-
-.hotel-room-div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin-top: 32px;
-}
-@media screen and (min-width: 1024px)  {.hotel-room-div{ justify-content: flex-end; gap: 48px; margin-bottom: 222px;}}
-@media screen and (min-width: 1280px) {.hotel-room-div { align-items: flex-start; margin-bottom: 139px;}}
-
-
-.hotel-text.room { margin-top: 0px;
-    color: var(--style-text-color); 
-    width: 163px;
-}
-@media screen and (min-width: 1024px) {.hotel-text.room{ width: 312px; }}
-@media screen and (min-width: 1280px) {.hotel-text.room { margin-top: 165px;  }}
-
-.slider-list {
-    display: flex;
-}
-@media screen and (max-width: 1023px) { .slider-list { gap: 20px;}}
-@media screen and (min-width: 1024px) and (max-width: 1279px) { 
-    .slider-list { 
-        position: absolute;
-        bottom: 56px;
-
-        gap: 40px; 
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
+  .about-hotel {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
 }
 @media screen and (min-width: 1280px) {
-    .slider-list {
-        position: absolute;
-        bottom: 62px;
-
-        gap: 30px; 
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
+  .about-hotel {
+    padding-top: 120px;
+    padding-bottom: 58px;
+  }
 }
 
-
-.tumba.foto-slider {margin-top: 32px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+.container.hotel-div {
+  position: relative;
 }
-@media screen and (max-width: 1023px) {.slider-list > li { width: 245px; transform: translateX(-120px);}}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {.slider-list > li { width: 194px; }}
-@media screen and (min-width: 1280px) {.slider-list > li { width: 254px; }}
+@media screen and (max-width: 1023px) {
+  .container.hotel-div {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .inter-room {
+    position: absolute;
+    top: -145px;
+    left: 112px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .inter-room {
+    position: absolute;
+    top: -153px;
+    left: 180px;
+  }
+}
+.title-div {
+  margin-left: auto;
+  margin-bottom: 28px;
+
+  max-width: 242px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .title-div {
+    margin-bottom: 142px;
+
+    max-width: 419px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .title-div {
+    margin-bottom: 162px;
+
+    max-width: 488px;
+  }
+}
+.about-hotel-text {
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel-text {
+    font-size: 32px;
+  }
+}
+
+.logo-text {
+  margin-top: 6px;
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0.3em;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-text {
+    margin-top: 4px;
+    font-family: var(--font-logo);
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logo-text {
+    color: #828282;
+  }
+}
+
+.hotel-text {
+  margin-top: 16px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #7a7a7a;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-text {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+}
+
+.tumba {
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1023px) {
+  .tumba {
+    max-width: 244px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .tumba {
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tumba {
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .tumba.interior {
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .tumba.interior {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tumba.interior {
+    max-width: 460px;
+  }
+}
+
+.hotel-room-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-div {
+    justify-content: flex-end;
+    gap: 48px;
+    margin-bottom: 222px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-room-div {
+    align-items: flex-start;
+    margin-bottom: 139px;
+  }
+}
+
+.hotel-text.room {
+  margin-top: 0px;
+  color: var(--style-text-color);
+  width: 163px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-text.room {
+    width: 312px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-text.room {
+    margin-top: 165px;
+  }
+}
+
+.slider-list {
+  display: flex;
+}
+@media screen and (max-width: 1023px) {
+  .slider-list {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .slider-list {
+    position: absolute;
+    bottom: 56px;
+
+    gap: 40px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slider-list {
+    position: absolute;
+    bottom: 62px;
+
+    gap: 30px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+.tumba.foto-slider {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1023px) {
+  .slider-list > li {
+    width: 245px;
+    transform: translateX(-120px);
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .slider-list > li {
+    width: 194px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slider-list > li {
+    width: 254px;
+  }
+}
 
 .slider-icon-div {
-    display: flex;
-    gap: 34px;
+  display: flex;
+  gap: 34px;
 }
 .icon-slider {
-    width: 32px;
-    height: 32px;
-    
+  width: 32px;
+  height: 32px;
 }
