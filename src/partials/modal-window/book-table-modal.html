@@ -1,0 +1,81 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button
+      class="close-button"
+      type="button"
+      aria-label="Button close modal menu"
+      data-modal-close
+    >
+      <svg class="icon-cross" width="24" height="24">
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+    <!-- форма модального вікна -->
+    <form class="form-set" name="booking-table-form" autocomplete="off">
+      <strong class="booking-offer">ЗАБРОНЮВАТИ СТОЛИК</strong>
+
+      <!-- обгортка полів введення -->
+      <div class="wrapper">
+        <div class="form-field">
+          <input
+            class="input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ваше ім’я"
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+            minlength="2"
+          />
+          <label class="area-name" for="name"
+            >На кого забронювати столик?</label
+          >
+        </div>
+        <div class="form-field">
+          <input
+            class="input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+38 (___) ___-__-__"
+            pattern="\+\[0-9]{12}"
+            title="+38 (___) ___-__-__"
+            maxlength="19"
+          />
+          <label class="area-name" for="phone">Номер телефону</label>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="form-field">
+          <input
+            class="input"
+            type="number"
+            name="volume"
+            id="volume"
+            placeholder="2"
+            min="1"
+            max="10"
+            step="1"
+          />
+          <label class="area-name" for="volume"
+            >Столик на яку кількість осіб?</label
+          >
+        </div>
+        <div class="form-field">
+          <input
+            class="input"
+            type="text"
+            name="date"
+            id="date"
+            placeholder="Сьогодні"
+          />
+          <label class="area-name" for="date">На яку дату бронювати?</label>
+        </div>
+      </div>
+      <button class="button-booking-table" type="submit">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+<!-- <script src="../../js/modal.js"></script> -->

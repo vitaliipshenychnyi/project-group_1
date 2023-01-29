@@ -54,7 +54,10 @@
 
 // кнопка бронювання
 .btn-booking {
-    padding: 20px 43px;
+    // padding: 20px 43px;
+
+    // для mobile page room
+      padding: 20px 41px;
 
     font-family: inherit;
     font-weight: 500;
