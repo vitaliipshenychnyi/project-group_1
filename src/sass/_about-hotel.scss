@@ -76,6 +76,7 @@
 
 .logo-text {
   margin-top: 6px;
+  color: var(--title-text-color);
   font-family: var(--font-logo);
   font-weight: 700;
   font-size: 40px;
@@ -86,15 +87,8 @@
 @media screen and (min-width: 1024px) {
   .logo-text {
     margin-top: 4px;
-    font-family: var(--font-logo);
     font-size: 64px;
     line-height: calc(69 / 64);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .logo-text {
-    color: #828282;
   }
 }
 
@@ -122,17 +116,17 @@
   overflow: hidden;
 }
 @media screen and (max-width: 1023px) {
-  .tumba {
+  .tumba.inter-room {
     max-width: 244px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .tumba {
+  .tumba.inter-room {
     max-width: 400px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .tumba {
+  .tumba.inter-room {
     max-width: 460px;
   }
 }
