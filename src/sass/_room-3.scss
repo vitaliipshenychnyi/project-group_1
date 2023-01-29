@@ -1,0 +1,68 @@
+.bk-color{
+    background-color: var(--menu-background);
+}
+.amet-3{
+    padding-top: 32px;
+    padding-left: 194px;
+
+    font-family: var(--font-secondary);
+    
+    
+    
+    color: #B4B4B4;
+
+
+    font-size: 20px;
+    line-height: 1.15;
+}
+.mimino-3{
+    font-family: var(--font-logo);
+    color: var(--title-text-color);
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    padding-left: 257px;
+    margin-top: 8px;
+}
+.there{
+    font-family: var(--font-secondary);
+
+font-weight: 700;
+font-size: 24px;
+line-height: 1.16;
+
+letter-spacing: 0.05em;
+padding-left: 81px;
+margin-top: 32px;
+}
+.amett{
+font-family: var(--font-main);
+
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+
+color: #7A7A7A;
+padding-left: 83px;
+padding-right: 59px;
+margin-top: 12px;
+
+}
+.room-3-btn{
+padding-left: 74px;
+margin-top: 27.59px;
+margin-bottom: 32px;
+}
+
+.room-3-marg{
+    margin-top: 16px;
+    
+}
+@media screen and (min-width:1200px){
+    .amet-3{
+        padding-top: 72px;
+        padding-left: 819px;
+    }
+}
