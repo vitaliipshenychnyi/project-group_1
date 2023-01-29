@@ -6,7 +6,40 @@
             </svg>
         </button>
         <strong class="book-room-title">ЦІНИ НА НОМЕР</strong>
-        <p class="book-room-text">Двомісний люкс</p>
-        
+        <form class="price-form" name="price_form" autocomplete="off">
+            <label class="price-form-field">
+                <select class="price-form-category" name="category">
+                    <option value="xxx" selected>Двомісний люкс</option>
+                    <option value="xxl">Трьохмісний номер</option>
+                    <option value="xl">Двохмісний номер</option>
+                </select>
+                <span class="price-form-label">Категорія номеру</span>
+            </label>
+            <label class="price-form-field">
+                <select class="price-form-amount" name="amount">
+                    <option value="n1" selected>1</option>
+                    <option value="n2">2</option>
+                    <option value="n3">3</option>
+                    <option value="n4">4</option>
+                    <option value="n5">5</option>
+                    <option value="n6">6</option>
+                    <option value="n7">7</option>
+                    <option value="n8">8</option>
+                    <option value="n9">9</option>
+                    <option value="n10">10</option>
+                </select>
+                <span class="price-form-label">Кількість ночей</span>
+            </label>
+            <label class="price-form-field">
+                <select name="">
+                    <select class="price-form-amount" name="price">
+                        <option value="c1" selected>1000</option>
+                        <option value="c2">900</option>
+                        <option value="c3">750</option>
+                    </select>
+                </select>
+                <span class="price-form-label">грн</span>
+            </label>
+        </form>
     </div>
 </div>
