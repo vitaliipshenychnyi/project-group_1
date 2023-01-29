@@ -1,0 +1,29 @@
+.about-rest {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    background-color: var(--accent-background);
+}
+
+.about-rest-subtitle {
+    margin-bottom: 12px;
+
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+
+    color: #B4B4B4;
+}
+
+.rest-name {
+    margin-bottom: 12px;
+    
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+
+    letter-spacing: 0.3em;
+
+    color: var(--title-text-color);
+}
