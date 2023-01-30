@@ -1,21 +1,17 @@
 <div class="backdrop">
     <div class="book-room-modal modal">
-        <button class="modal-button" type="button">
-            <svg class="close-modal" width="24" height="24">
-                <use href="./images/icons.svg#icon-cross"></use>
-            </svg>
-        </button>
+        <button class="close-button" type="button" aria-label="Button close modal menu" data-modal-close>
+        <svg class="icon-cross" width="24" height="24">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
         <strong class="book-room-title">ЦІНИ НА НОМЕР</strong>
         <form class="price-form" name="price_form" autocomplete="off">
             <label class="price-form-field">
-                <input class="price-form-input"
-                type="text"
-
-                >
                 <select class="price-form-category" name="category">
-                    <option value="xxx" selected>Двомісний люкс</option>
-                    <option value="xxl">Трьохмісний номер</option>
-                    <option value="xl">Двохмісний номер</option>
+                    <option value="xxx" selected><span class="price-form-vars-room">Двомісний люкс</span></option>
+                    <option value="xxl"><span class="price-form-vars-room">Трьохмісний номер</span></option>
+                    <option value="xl"><span class="price-form-vars-room">Трьохмісний номер</span></option>
                 </select>
                 <span class="price-form-label">Категорія номеру</span>
             </label>
@@ -44,7 +40,7 @@
                 </select>
                 <span class="price-form-label">грн</span>
             </label>
-            <button class="button-booking-table" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+            <button class="button-booking-table btn-look-price btn-modal" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
         </form>
     </div>
 </div>
