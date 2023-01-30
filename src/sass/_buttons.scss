@@ -76,7 +76,8 @@
 }
 
 .btn-booking:hover,
-.btn-booking:focus {
+.btn-booking:focus,
+.btn-booking:active {
     color: var(--footer-background);
     background-color: var(--color-text-btn);
 }
