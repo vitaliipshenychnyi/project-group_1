@@ -1,3 +1,137 @@
-.h1{
-    color: red;
+
+
+.contacts{
+        background: #FFFDEE;
+}
+.contacts-title{
+        // font-family: 'Film P3';
+        font-family: var(--font-logo);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 43px;
+        letter-spacing: 0.3em;
+        color: #494848;
+
+        margin-bottom: 12px;
+}
+
+.contacts-container{
+        padding-top: 34px;
+        padding-bottom: 34px;
+        // width: 100%;
+}
+@media screen and (min-width: 1024px) {
+        .contacts-container{
+                padding-top: 56px;
+                padding-bottom: 40px;
+        }
+}
+@media screen and (min-width: 1280px){
+        .contacts-container {
+                padding-top: 56px;
+                padding-bottom: 74px;
+        }
+}
+.contacts-subtitle{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #5F5F5F;
+        margin-bottom: 16px;
+}
+
+
+.contacts-link{
+        margin-bottom: 16px;
+}
+.contacts-name{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #C79002;
+}
+.tel{
+        display: flex;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #494848;
+
+        height: 40px;
+        background: #FFFFFF;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+        text-decoration: none;
+        margin-left: 54px;
+        
+        width: 100%;
+}
+.tel .tel-2+.tel-2{
+        margin-left: 10px;
+}
+
+.tel-1{
+        margin-left: 22px;
+}
+.tel-2{
+        
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #494848;
+}
+
+.contacts-adress{
+        display: block;
+        margin-left: auto;
+}
+.contacts-list {
+        margin-bottom: 32px;
+}
+.contact-list{
+        display: flex;
+        align-items: center;
+                
+}
+.contacts-tex{
+        display: flex;
+        align-items: center;
+        width: 260px;
+        height: 76px;
+        background: #FFFFFF;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+        text-decoration: none;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #494848;
+}
+
+.contacts-svg{
+        width: 24px;
+        height: 24px;
+        fill: #C79002;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+.svg-phone{
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+        fill: #C79002;
 }
