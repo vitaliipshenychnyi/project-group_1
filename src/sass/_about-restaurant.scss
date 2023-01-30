@@ -3,7 +3,45 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .about-rest {
+    overflow: hidden;
+  }
+}
+
+.about-rest-container {
+  position: relative;
+
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-rest-container {
+    padding-top: 120px;
+    padding-bottom: 32px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-rest-container {
+    padding-bottom: 50px;
+    padding-right: 85px;
+  }
+}
+
+.about-rest-wrapper-main {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
   .about-rest-wrapper-main {
+    margin-bottom: 162px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .about-rest-main-info {
     margin-bottom: 32px;
   }
 }
@@ -14,8 +52,7 @@
   font-family: var(--font-secondary);
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.15;
-
+  line-height: calc(23 / 20);
   color: #b4b4b4;
 }
 
@@ -24,6 +61,7 @@
     margin-bottom: 4px;
 
     font-size: 32px;
+    line-height: calc(37 / 32);
   }
 }
 
@@ -33,7 +71,7 @@
   font-family: var(--font-logo);
   font-weight: 700;
   font-size: 40px;
-  line-height: 1.1;
+  line-height: calc(43 / 40);
   letter-spacing: 0.3em;
 
   color: var(--title-text-color);
@@ -44,6 +82,7 @@
     margin-bottom: 24px;
 
     font-size: 64px;
+    line-height: calc(69 / 64);
   }
 }
 
@@ -51,7 +90,7 @@
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.25;
+  line-height: calc(15 / 12);
   letter-spacing: 0.02em;
 
   color: var(--accent-text-color);
@@ -59,94 +98,56 @@
 
 @media screen and (min-width: 1024px) {
   .about-rest-desc {
+    line-height: calc(20 / 16);
     font-size: 16px;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .about-rest-wrapper-main {
-    display: flex;
-  }
-}
-
-.about-rest-main-info {
-  padding-top: 16px;
+.about-rest-interior-main img {
+  margin-left: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  .about-rest-main-info {
-    margin-right: 26px;
-    padding-top: 120px;
+  .about-rest-interior-main {
+    position: absolute;
+    top: -32px;
+    right: 112px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .about-rest-main-info {
-    margin-right: 37px;
+  .about-rest-interior-main {
+    top: -33px;
+    right: 180px;
   }
 }
 
-.about-rest-main-info .about-rest-desc {
+.about-rest-desc {
   max-width: 258px;
 }
 
-@media screen and (max-width: 1023px) {
-  .about-rest-main-info .about-rest-desc {
-    margin-bottom: 28px;
-  }
-}
-
 @media screen and (min-width: 1024px) {
-  .about-rest-main-info .about-rest-desc {
+  .about-rest-desc {
     max-width: 439px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .about-rest-main-info .about-rest-desc {
+  .about-rest-desc {
     max-width: 518px;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .about-rest-interior-room1 {
-    position: relative;
-    top: -32px;
-  }
-}
-
-.about-rest-img {
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+.about-rest-interior img,
+.about-rest-interior-main img {
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-}
-
-@media screen and (min-width: 1024px) {
-  .about-rest-img {
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .about-rest-wrapper-details .about-rest-img {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .about-rest-img-right {
-    margin-left: auto;
-  }
 }
 
 .about-rest-wrapper-details {
   display: flex;
+  align-items: center;
   column-gap: 20px;
-}
-
-@media screen and (max-width: 1023px) {
-  .about-rest-wrapper-details {
-    margin-bottom: 32px;
-  }
 }
 
 .about-rest-info {
@@ -173,30 +174,108 @@
   }
 }
 
-.about-rest-info .about-rest-desc {
+.gold {
   color: var(--style-text-color);
+  max-width: 163px;
 }
 
 @media screen and (min-width: 1024px) {
-  .about-rest-info {
+  .gold {
     max-width: 312px;
-    padding-top: 148px;
+  }
+}
+
+// позиціонування контейнер слайдеру
+.test-new {
+  position: absolute;
+  bottom: 72px;
+  left: 84px;
+}
+
+@media screen and (min-width: 1024px) {
+  .test-new {
+    bottom: 96px;
+    left: 536px;
+    width: 428px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .about-rest-info {
-    padding-top: 89px;
+  .test-new {
+    bottom: 118px;
+    left: 647px;
+    width: 548px;
   }
+}
+
+// налаштування розмірів слайдеру для mobile
+.swiper {
+  height: 245px !important;
+  width: 530px !important;
 }
 
 @media screen and (min-width: 1024px) {
-  .about-rest-interior-room2 {
-    position: relative;
-    top: -97px;
+  .swiper {
+    height: 194px !important;
+    width: 428px !important;
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .swiper {
+    height: 254px !important;
+    width: 548px !important;
+  }
+}
+
+// стилізація зображень слайдеру
+.swiper-slide img {
+  border-radius: 2px;
+  width: 100% !important;
+}
+
+// позиціонування нових кнопок слайдера
+.swiper-btn-wrapper_new-about-hotel {
+  display: flex;
+  gap: 32px;
+  margin-top: 297px;
+  justify-content: end;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-btn-wrapper_new-about-hotel {
+    margin-top: 198px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-btn-wrapper_new-about-hotel {
+    margin-top: 143px;
+  }
+}
+
+// стилізація нових кнопок слайдера
+.swiper-button-next_new,
+.swiper-button-prev_new {
+  padding: 0;
+
+  fill: #000000;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.swiper-button-next_new:hover,
+.swiper-button-next_new:focus,
+.swiper-button-next_new:active,
+.swiper-button-prev_new:hover,
+.swiper-button-prev_new:focus,
+.swiper-button-prev_new:active {
+  fill: #f3c653;
+}
+
+// +++++++++++++ПОТІМ ВИДАЛИТИ+++++++++++++++++++++++
 // slider
 
 // @media screen and (max-width: 1023px) {
