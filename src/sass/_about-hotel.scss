@@ -256,8 +256,8 @@
 }
 
 // стилізація нових кнопок слайдера
-.swiper-button-next_new,
-.swiper-button-prev_new {
+.swiper2-button-next_new,
+.swiper2-button-prev_new {
   padding: 0;
 
   fill: #000000;
@@ -267,67 +267,11 @@
   outline: none;
 }
 
-.swiper-button-next_new:hover,
-.swiper-button-next_new:focus,
-.swiper-button-next_new:active,
-.swiper-button-prev_new:hover,
-.swiper-button-prev_new:focus,
-.swiper-button-prev_new:active {
+.swiper2-button-next_new:hover,
+.swiper2-button-next_new:focus,
+.swiper2-button-next_new:active,
+.swiper2-button-prev_new:hover,
+.swiper2-button-prev_new:focus,
+.swiper2-button-prev_new:active {
   fill: #f3c653;
 }
-
-// ++++++++++ПОТІМ ВИДАЛИТИ+++++++++
-// .slider-list {
-//   display: flex;
-//   gap: 20px;
-// }
-
-// @media screen and (min-width: 1024px) and (max-width: 1279px) {
-//   .slider-list {
-//     position: absolute;
-//     bottom: 56px;
-
-//     gap: 40px;
-//     flex-direction: row-reverse;
-//     justify-content: flex-end;
-//   }
-// }
-// @media screen and (min-width: 1280px) {
-//   .slider-list {
-//     bottom: 62px;
-
-//     gap: 30px;
-//   }
-// }
-
-// .tumba.foto-slider {
-//   margin-top: 32px;
-//   margin-bottom: 20px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-// @media screen and (max-width: 1023px) {
-//   .slider-list > li {
-//     width: 245px;
-//     transform: translateX(-120px);
-//   }
-// }
-// @media screen and (min-width: 1024px) and (max-width: 1279px) {
-//   .slider-list > li {
-//     width: 194px;
-//   }
-// }
-// @media screen and (min-width: 1280px) {
-//   .slider-list > li {
-//     width: 254px;
-//   }
-// }
-
-// .slider-icon-div {
-//   display: flex;
-//   gap: 34px;
-// }
-// .icon-slider {
-//   width: 32px;
-//   height: 32px;
-// }
