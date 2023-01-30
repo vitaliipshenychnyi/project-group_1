@@ -9,7 +9,6 @@ var swiper = new Swiper('.swiper_about-restaurant', {
     prevEl: '.swiper-button-prev_new',
   },
   breakpoints: {
-    // для tablet та desktop
     1024: {
       spaceBetween: 40,
     },
@@ -23,11 +22,10 @@ var swiper = new Swiper('.swiper_about-hotel', {
   loop: true,
   loopFillGroupWithBlank: true,
   navigation: {
-    nextEl: '.swiper-button-next_new',
-    prevEl: '.swiper-button-prev_new',
+    nextEl: '.swiper2-button-next_new',
+    prevEl: '.swiper2-button-prev_new',
   },
   breakpoints: {
-    // для tablet та desktop
     1024: {
       spaceBetween: 40,
     },
