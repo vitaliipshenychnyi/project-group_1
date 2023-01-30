@@ -31,6 +31,7 @@
         padding-top: 34px;
         padding-bottom: 34px;
         // width: 100%;
+        align-items: flex-end;
 }
 @media screen and (min-width: 1024px) {
         .contacts-container{
@@ -123,8 +124,8 @@
         border-radius: 2px;
         text-decoration: none;
         margin-left: 54px;
-        
-        // width: 100%;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
         padding: 8px;
 }
 
@@ -254,6 +255,10 @@
         display: block;
         width: 384px;
         height: 220px;
+        border: 1px solid #BABABA;
+        
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
 }
 @media screen and (min-width: 1024px){
         .contact-map{
@@ -261,6 +266,8 @@
                 width: 533px;
                 height: 412px;
                 margin-left: 103px;
+                box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+                border-radius: 2px;
         }
 }
 @media screen and (min-width: 1280px){
@@ -269,6 +276,8 @@
                 width: 634px;
                 margin-left: 108px;
                 margin-bottom: 0px;
+                box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+                border-radius: 2px;
         }
 }
 @media screen and (min-width: 1024px){
