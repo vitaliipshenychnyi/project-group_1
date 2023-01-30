@@ -187,7 +187,7 @@
 }
 
 // додаткове позиціонування адреси-посилання
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 371px) and (max-width: 1023px) {
   .hero__address-link {
     position: absolute;
     top: 64px;
@@ -269,5 +269,22 @@
 @media screen and (min-width: 1280px) {
   .hero__social-list {
     display: none;
+  }
+}
+
+// окрема стилізація для маленьких екранів
+@media screen and (max-width: 370px) {
+  .hero__address-link {
+    position: absolute;
+    top: 84px;
+    right: 21px;
+  }
+
+  .hero__title {
+    font-size: 84px;
+  }
+
+  .hero__slogan {
+    font-size: 24px;
   }
 }

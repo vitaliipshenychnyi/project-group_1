@@ -212,28 +212,28 @@
 
 // налаштування розмірів слайдеру для mobile
 .swiper {
-  height: 245px !important;
-  width: 515px !important;
+  height: 245px;
+  width: 515px;
 }
 
 @media screen and (min-width: 1024px) {
   .swiper {
-    height: 194px !important;
-    width: 428px !important;
+    height: 194px;
+    width: 428px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .swiper {
-    height: 254px !important;
-    width: 548px !important;
+    height: 254px;
+    width: 548px;
   }
 }
 
 // стилізація зображень слайдеру
 .swiper-slide img {
   border-radius: 2px;
-  width: 100% !important;
+  width: 100%;
 }
 
 // позиціонування нових кнопок слайдера
