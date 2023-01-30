@@ -118,6 +118,13 @@
   }
 }
 
+// окрема стилізація для маленьких екранів
+@media screen and (max-width: 370px) {
+  .hero-hotel__title {
+    font-size: 84px;
+  }
+}
+
 // --------- ! ! ! ! ! ! ! ! !видалити ! ! ! ! ! ! ! !----------------
 .delete {
   position: absolute;
