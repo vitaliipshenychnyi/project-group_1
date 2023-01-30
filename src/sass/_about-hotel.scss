@@ -19,7 +19,7 @@
 @media screen and (min-width: 1280px) {
   .about-hotel {
     padding-top: 120px;
-    padding-bottom: 58px;
+    padding-bottom: 50px;
   }
 }
 
@@ -204,7 +204,7 @@
 
 @media screen and (min-width: 1280px) {
   .test_new {
-    bottom: 118px;
+    bottom: 65px;
     left: 85px;
     width: 548px;
   }
@@ -241,12 +241,17 @@
   display: flex;
   gap: 32px;
   margin-top: 297px;
-  // justify-content: end;
 }
 
 @media screen and (min-width: 1024px) {
   .swiper-btn-wrapper_new {
     margin-top: 198px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-btn-wrapper_new {
+    margin-top: 115px;
   }
 }
 

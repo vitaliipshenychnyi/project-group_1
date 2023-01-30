@@ -150,18 +150,6 @@
   column-gap: 20px;
 }
 
-.about-rest-info {
-  max-width: 140px;
-  padding-top: 30px;
-}
-
-@media screen and (min-width: 414px) {
-  .about-rest-info {
-    max-width: 163px;
-    padding-top: 70px;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .about-rest-wrapper-details {
     column-gap: 48px;
