@@ -63,7 +63,7 @@
   stroke: #000000;
 }
 
-.booking-offer {
+.book-title {
   display: block;
   text-align: center;
   font-family: var(--font-secondary);
@@ -86,14 +86,26 @@
   width: 100%;
   height: auto;
   row-gap: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+
+  // Властивості марджин, які нижче закоментовані робдять відступ, між інпутами, що не відповідає макету далі марджин через :last-child
+  // margin-top: 40px;
+  // margin-bottom: 40px;
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     row-gap: 28px;
     column-gap: 16px;
   }
+}
+
+// Це bugfix відступу між інпутами, які про які вище написано
+.form-set>:nth-child(1) {
+  margin-top: 40px;
+}
+
+.form-set>:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .form-set .form-field {
@@ -121,8 +133,8 @@
 .form-set .input {
   display: block;
   margin-bottom: 8px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 12px;
   padding-right: 12px;
 
@@ -166,8 +178,7 @@
 
   transition: background-color var(--transition-fast),
     color var(--transition-fast);
-
-  cursor: pointer;
+    cursor: pointer;
 
   @media screen and (min-width: 1024px) {
     padding: 18px 116px;
