@@ -1,0 +1,219 @@
+// добавляємо задній фон
+.room-hero {
+  background-color: var(--accent-background);
+}
+
+//прибираємо всі паддінги у main
+.hero-room-main {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// прибираємо нижній маржин у btn
+.hero-room-btn {
+  margin-bottom: 0;
+}
+
+// позиціонування заголовку і тексту
+.room-description {
+  position: absolute;
+  bottom: 142px;
+  left: 15px;
+  width: 325px;
+}
+
+@media screen and (min-width: 1024px) {
+  .room-description {
+    width: auto;
+    left: 47px;
+    bottom: 104px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .room-description {
+    bottom: 48px;
+    left: 85px;
+  }
+}
+
+// стилізація заголовку
+.hero__title--room {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(32 / 28);
+  letter-spacing: 0.05em;
+  color: var(--text-color-bg);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__title--room {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    margin-bottom: 24px;
+  }
+}
+
+.lux {
+  text-transform: none;
+}
+
+// стилізація тексту
+.hero__text--room {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: var(--text-color-bg);
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__text--room {
+    width: 400px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}
+
+// додавання градієнту
+.room-box::after {
+  content: '';
+  display: block;
+  height: 143px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+@media screen and (min-width: 1024px) {
+  .room-box::after {
+    height: 116px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .room-box::after {
+    height: 147px;
+  }
+}
+
+//позиціонування лінка адреси
+@media screen and (min-width: 1024px) {
+  .link-room {
+    position: absolute;
+    bottom: 22px;
+    left: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .link-room {
+    display: none;
+  }
+}
+// позиціонування кнопки
+.btn-room {
+  position: absolute;
+  bottom: 40px;
+  right: 73px;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-room {
+    bottom: 62px;
+    right: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn-room {
+    bottom: 66px;
+    right: 85px;
+  }
+}
+
+// позиціонування соц. лінків
+@media screen and (max-width: 1023px) {
+  .soc-room {
+    flex-direction: column;
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .soc-room {
+    position: absolute;
+    bottom: 36px;
+    left: 375px;
+  }
+}
+
+// slide
+.my-swiper {
+  z-index: 0 !important;
+}
+
+// позиціонування лівої кнопки слайду
+.swiper-button-prev-room {
+  position: absolute;
+  bottom: 350px;
+  left: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-button-prev-room {
+    bottom: 338px;
+    left: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-button-prev-room {
+    bottom: 268px;
+    left: 85px;
+  }
+}
+
+// позиціонування правої кнопки слайду
+.swiper-button-next-room {
+  position: absolute;
+  bottom: 350px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-button-next-room {
+    bottom: 338px;
+    right: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-button-next-room {
+    bottom: 268px;
+    right: 85px;
+  }
+}
+
+// стилізація кнопок слайду
+.swiper-button-prev-room,
+.swiper-button-next-room {
+  fill: var(--footer-allelement-color);
+  background: rgba(0, 0, 0, 0.65);
+  border: none;
+}
