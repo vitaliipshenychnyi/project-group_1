@@ -1,294 +1,277 @@
-
-/*текст*/
-.bk-color{
-    position: relative;
-    background-color: var(--menu-background);  
+// /*текст*/
+.bk-color {
+  position: relative;
+  background-color: var(--menu-background);
 }
 
+.amet-3 {
+  padding-top: 32px;
+  padding-left: 179px;
 
-.amet-3{
-    padding-top: 32px;
-    padding-left: 179px;
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  line-height: calc(23 / 20);
 
-
-    font-family: var(--font-secondary);
-    font-size: 20px;
-    line-height: calc(23 / 20);
-    
-    color: #B4B4B4;
+  color: #b4b4b4;
 }
 
-@media screen and (min-width:1024px) {
-    .amet-3{
-        font-size:32px;
+@media screen and (min-width: 1024px) {
+  .amet-3 {
+    font-size: 32px;
+  }
+}
 
-.mimino-3{
-    padding-left: 252px;
+.mimino-3 {
+  padding-left: 252px;
 
-    margin-top: 8px;
+  margin-top: 8px;
 
-    font-family: var(--font-logo);
-    font-size: 40px;
-    line-height: calc(43 / 40);
-    letter-spacing: 0.3em;
+  font-family: var(--font-logo);
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  font-weight: 700;
+
+  color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .mimino-3 {
+    font-size: 64px;
+  }
+}
+
+.there {
+  padding-left: 81px;
+  margin-top: 32px;
+
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 1280px) {
+  .there {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .there {
+    font-size: 30px;
+  }
+}
+
+.amett {
+  padding-left: 83px;
+  padding-right: 59px;
+  margin-top: 12px;
+
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  color: #7a7a7a;
+}
+
+@media screen and (min-width: 1024px) {
+  .amett {
     font-weight: 700;
-
-    color: var(--title-text-color);
+    font-size: 16px;
+  }
 }
 
-@media screen and (min-width:1024px) {
-    .mimino-3{
-        font-size: 64px;
+@media screen and (min-width: 1280px) {
+  .title-div-3 {
+    padding-top: 72px;
 
-    }
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 600px;
+  }
+  .amet-3 {
+    padding-top: 0;
+    padding-left: 142px;
+  }
+  .mimino-3 {
+    margin-top: 3px;
+  }
+  .there {
+    margin-top: 72px;
+    padding-left: 0;
+
+    max-width: 454px;
+  }
+  .amett {
+    margin-top: 24px;
+    padding: 0;
+
+    max-width: 400px;
+  }
 }
-
-
-.there{
-    padding-left: 81px;
-    margin-top: 32px;
-
-    font-family: var(--font-secondary);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: calc(28 / 24);
-    letter-spacing: 0.05em;
-
-}
-
-@media screen and (min-width:1280px) {
-    .there{
-        font-size: 36px;
-    }
-}
-@media screen and (min-width:1024px) and (max-width:1279px) {
-    .there{
-        font-size: 30px;
-    }
-}
-
-.amett{
-padding-left: 83px;
-padding-right: 59px;
-margin-top: 12px;
-
-font-family: var(--font-main);
-font-weight: 600;
-font-size: 12px;
-line-height: calc(15 / 12);
-letter-spacing: 0.02em;
-
-color: #7A7A7A;
-}
-
-@media screen and (min-width:1024px) {
-    .amett{
-        font-weight: 700;
-        font-size: 16px;
-    }
-}
-
-
-@media screen and (min-width:1280px){
-    .title-div-3{
-        padding-top: 72px;
-
-        
-        margin-bottom: 0;
-        margin-left: 0;
-        padding-left: 600px;
-    }
-    .amet-3{
-        padding-top: 0;
-        padding-left: 142px;
-    }
-    .mimino-3{
-        margin-top: 3px;
-        
-
-    }
-    .there{
-        margin-top: 72px;
-        padding-left: 0;
-
-        max-width: 454px;
-
-    }
-    .amett{
-        margin-top: 24px;
-        padding: 0;
-
-        max-width: 400px;
-    }
-}
-@media screen and (min-width:1024px) and (max-width:1279px){
-    .title-div-3{
-        padding: 0;
-        margin: 0;
-    }
-    .amet-3{
-        
-         margin: 0;
-         padding: 0;
-         padding-left: 609px;
-         padding-top: 66px;
-    }
-    .mimino-3{
-        margin-top: 4px;
-         padding-left: 727px;
-    }
-    .there{
-        margin-top: 62px;
-        padding: 0;
-        padding-left: 510px;
-    }
-    .amett{
-        margin-top: 16px;       
-        padding-left: 510px;
-    }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .title-div-3 {
+    padding: 0;
+    margin: 0;
+  }
+  .amet-3 {
+    margin: 0;
+    padding: 0;
+    padding-left: 609px;
+    padding-top: 66px;
+  }
+  .mimino-3 {
+    margin-top: 4px;
+    padding-left: 727px;
+  }
+  .there {
+    margin-top: 62px;
+    padding: 0;
+    padding-left: 510px;
+  }
+  .amett {
+    margin-top: 16px;
+    padding-left: 510px;
+  }
 }
 
 /*фото 1*/
-.room-3{
-    position: absolute;
-    top: 286px;
-    left: 30px;
+.room-3 {
+  position: absolute;
+  top: 286px;
+  left: 30px;
 
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
-
-@media screen and (min-width:1280px){
-    .room-3{
-    
-
+@media screen and (min-width: 1280px) {
+  .room-3 {
     position: absolute;
     top: -32px;
     left: 180px;
     max-width: 460px;
-
-    }
-    .room-3-height{
-        min-height: 956px;
-    }
+  }
+  .room-3-height {
+    min-height: 956px;
+  }
 }
-@media screen and (min-width:1024px) and (max-width:1279px){
-    .room-3{
-        position: absolute;
-        top: -32px;
-        right: 512px;
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .room-3 {
+    position: absolute;
+    top: -32px;
+    right: 512px;
 
-        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-    }
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
 }
-
 
 /*фото 2*/
 
-.room-flex{
-    display: flex;
-    gap: 16px;
+.room-flex {
+  display: flex;
+  gap: 16px;
 }
-.room-3-poz{
-    position: absolute;
-    left: 145px;
-    bottom: 216px;
+.room-3-poz {
+  position: absolute;
+  left: 145px;
+  bottom: 216px;
 
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+.room-3-height {
+  min-height: 1050px;
+}
+@media screen and (min-width: 1280px) {
+  .room-3-poz {
+    position: absolute;
+    top: 590px;
+    left: 647px;
+    gap: 40px;
+    max-width: 548px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+  }
 }
-.room-3-height{
-    min-height: 1050px;
-}
-@media screen and (min-width:1280px){
-    .room-3-poz{
-position: absolute;
-top: 590px;
-left: 647px;
-gap: 40px;
-max-width: 548px;
-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
- }
-}
-@media screen and (min-width:1024px) and (max-width:1279px){
-    .room-3-poz{
-position: absolute;
-top: 540px;
-left: 549px;
-gap: 40px;
-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
- }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .room-3-poz {
+    position: absolute;
+    top: 540px;
+    left: 549px;
+    gap: 40px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
 }
 /*свайпер*/
 
-.swiper-pozition{
+.swiper-pozition {
+  position: absolute;
+  right: 32px;
+  bottom: 164px;
+}
+.room-3-gap {
+  margin-left: 32px;
+}
+@media screen and (min-width: 1280px) {
+  .swiper-pozition {
     position: absolute;
-    right: 32px;
-    bottom: 164px;
+    bottom: 40px;
+    right: 535px;
+  }
+  .room-3-gap {
+    margin-left: 34px;
+  }
 }
-.room-3-gap{
-    margin-left: 32px;
-}
-@media screen and (min-width:1280px){
-    .swiper-pozition{
-        position: absolute;
-        bottom: 40px;
-        right: 535px;
-    }
-    .room-3-gap{
-        margin-left: 34px;
-    }
-}
-@media screen and (min-width:1024px) and (max-width:1279px){
-    .swiper-pozition{
-        position: absolute;
-        bottom: 48px;
-        right: 378px;
-    }
-    .room-3-gap{
-        margin-left: 34px;
-    }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .swiper-pozition {
+    position: absolute;
+    bottom: 48px;
+    right: 378px;
+  }
+  .room-3-gap {
+    margin-left: 34px;
+  }
 }
 
 /*кнопки*/
 
-.room-3-btn{
+.room-3-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 114px;
+}
+.room-3-marg {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+  .room-3-btn {
     position: absolute;
-    bottom: 32px;
-    left: 114px;
-}
-.room-3-marg{
+    bottom: 182px;
+    left: 85px;
+    margin: 0;
+  }
+  .room-3-marg {
     margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .room-3-height {
+    min-height: 838px;
+  }
 }
 
-@media screen and (min-width:1280px){
-    .room-3-btn{
-       position: absolute;
-       bottom: 182px;
-       left: 85px;
-       margin: 0;
-    }
-    .room-3-marg{
-        margin-top: 16px;
-    }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .room-3-btn {
+    position: absolute;
+    bottom: 159px;
+    left: 47px;
+    margin: 0;
+  }
+  .room-3-marg {
+    margin-top: 16px;
+  }
 }
-@media screen and (min-width:1024px) and (max-width:1279px){
-    .room-3-height{
-        min-height: 838px; 
-    }
-}
-
-@media screen and (min-width:1024px) and (max-width:1279px){
-    .room-3-btn{
-       position: absolute;
-       bottom: 159px;
-       left: 47px;
-       margin: 0;
-    }
-    .room-3-marg{
-        margin-top: 16px;
-
-    }
-}
-
