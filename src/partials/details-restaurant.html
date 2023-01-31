@@ -1,0 +1,133 @@
+<section class="section-details">
+  <div class="container details-container">
+    <!-- text -->
+    <div class="details__position">
+      <h2 class="details__title">MIMIHO</h2>
+      <h3 class="details__subtitle">Ресторан</h3>
+      <p class="details__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </p>
+    </div>
+    <!-- foto-static -->
+    <div class="deteils__static">
+      <div class="details__slider-container">
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./images/details-restaurant/slider/picture-desktop-1.jpg    1x,
+                ./images/details-restaurant/slider/picture-desktop-1@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/details-restaurant/slider/picture-tablet-1.jpg    1x,
+                ./images/details-restaurant/slider/picture-tablet-1@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/details-restaurant/slider/picture-mobile-1.jpg    1x,
+                ./images/details-restaurant/slider/picture-mobile-1@2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <img
+              class="details__slider-img"
+              src="./images/details-restaurant/slider/picture-mobile-1.jpg"
+              alt="photo of the dish"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./images/details-restaurant/slider/picture-desktop-2.jpg    1x,
+                ./images/details-restaurant/slider/picture-desktop-2@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/details-restaurant/slider/picture-tablet-2.jpg    1x,
+                ./images/details-restaurant/slider/picture-tablet-2@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/details-restaurant/slider/picture-mobile-2.jpg    1x,
+                ./images/details-restaurant/slider/picture-mobile-2@2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <img
+              class="details__slider-img"
+              src="./images/details-restaurant/slider/picture-mobile-2.jpg"
+              alt="photo of the dish"
+            />
+          </picture>
+        </div>
+        <div class="slider-img-third">
+          <picture>
+            <source
+              srcset="
+                ./images/details-restaurant/slider/picture-desktop-3.jpg    1x,
+                ./images/details-restaurant/slider/picture-desktop-3@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/details-restaurant/slider/picture-tablet-3.jpg    1x,
+                ./images/details-restaurant/slider/picture-tablet-3@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <img
+              class="details__slider-img"
+              src="./images/details-restaurant/slider/picture-tablet-3.jpg"
+              alt="photo of the dish"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <!-- buttons -->
+    <div class="details__buttons">
+      <ul class="list details__item">
+        <li>
+          <button
+            class="btn"
+            type="button"
+            aria-label="Кнопка забронювати столик"
+            data-modal-open
+          >
+            Забронювати столик
+          </button>
+        </li>
+        <li>
+          <a href="#" class="link btn details__link">Переглянути меню</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button
+      class="close-button"
+      type="button"
+      aria-label="Button close modal menu"
+      data-modal-close
+    >
+      <svg class="icon-cross" width="24" height="24">
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+  </div>
+</div>
