@@ -141,6 +141,15 @@
     color: var(--text-color-gray);
     border: 1px solid transparent;
     background-color: var(--accent-background);
+    appearance: none;
+}
+
+.price-form-amount {
+    appearance: none;
+}
+
+.price-form-category:focus, .price-form-amount:focus {
+    outline: none;
 }
 
 @media screen and (min-width: 1024px) {
