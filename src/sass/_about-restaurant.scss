@@ -197,20 +197,20 @@
 }
 
 // налаштування розмірів слайдеру для mobile
-.swiper {
+.swiper-fix {
   height: 245px;
   width: 515px;
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper {
+  .swiper-fix {
     height: 194px;
     width: 428px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper {
+  .swiper-fix {
     height: 254px;
     width: 548px;
   }
