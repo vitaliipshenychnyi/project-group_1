@@ -1,0 +1,47 @@
+<div class="backdrop" data-modal3>
+    <div class="book-room-modal modal">
+        <button class="close-button" type="button" aria-label="Button close modal menu" data-modal3-close>
+        <svg class="icon-cross" width="24" height="24">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+        <strong class="booking-offer price-title">ЦІНИ НА НОМЕР</strong>
+        <form class="price-form" name="price_form" autocomplete="off">
+            <label class="price-form-field">
+                <select class="price-form-category" id="category" name="category">
+                    <option value="xxx" selected>Двомісний люкс</option>
+                    <option value="xxl">Трьохмісний номер</option>
+                    <option value="xl">Трьохмісний номер</option>
+                </select>
+                <span class="area-name">Категорія номеру</span>
+            </label>
+            <div class="price-form-position">
+                <label class="price-form-field">
+                    <select class="price-form-amount select" id="amount" name="amount" pattern>
+                        <option value="n1" selected>1</option>
+                        <option value="n2">2</option>
+                        <option value="n3">3</option>
+                        <option value="n4">4</option>
+                        <option value="n5">5</option>
+                        <option value="n6">6</option>
+                        <option value="n7">7</option>
+                        <option value="n8">8</option>
+                        <option value="n9">9</option>
+                        <option value="n10">10</option>
+                    </select>
+                    <span class="area-name">Кількість ночей</span>
+                </label>
+                <label class="price-form-field">
+                    <select class="price-form-amount select" id="price" name="price">
+                        <option value="c1" selected>1000</option>
+                        <option value="c2">900</option>
+                        <option value="c3">750</option>
+                    </select>
+                    <span class="area-name">грн</span>
+                </label>
+            </div>
+            <button class="button-booking-table btn-look-price btn-modal" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+        </form>
+    </div>
+</div>
+<script type="module" src="./index.js"></script>
