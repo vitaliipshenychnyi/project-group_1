@@ -1,286 +1,301 @@
-
-
-.contacts{
-        background: #FFFDEE;
+.contacts {
+  // !!!замінив на змінні
+  background: var(--accent-background);
 }
-.contacts-title{
-        font-family: 'Film P3';
-        font-family: var(--font-logo);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 1,07;
-        letter-spacing: 0.3em;
-        color: #494848;
+.contacts-title {
+  // !!!зайве  font-family: 'Film P3';
+  font-family: var(--font-logo);
+  //  !!!зайве font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  //   !!!замінив на змінні
+  color: var(--title-text-color);
 
-        margin-bottom: 12px;
-}
-
-@media screen and (min-width: 1024px){
-        .contacts-title{
-                margin-bottom: 8px;
-                font-family: 'Film P3';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 64px;
-                        line-height: 1,07;
-        }
+  margin-bottom: 12px;
 }
 
-.contacts-container{
-        padding-top: 34px;
-        padding-bottom: 34px;
-        // width: 100%;
+@media screen and (min-width: 1024px) {
+  .contacts-title {
+    margin-bottom: 8px;
+    // !!!зайве  font-family: 'Film P3';
+    font-family: var(--font-logo);
+    //  !!!зайве font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.07;
+  }
+}
+
+.contacts-container {
+  padding-top: 34px;
+  padding-bottom: 34px;
 }
 @media screen and (min-width: 1024px) {
-        .contacts-container{
-                display: flex;
-                flex-direction: column;
-                padding-top: 56px;
-                padding-bottom: 0,7;
-                flex-wrap: wrap;
-                flex-direction: row;
-                padding-top: 65px;
-                padding-bottom: 44px;        }
+  .contacts-container {
+    display: flex;
+    //     !!!додав align-items: flex-end; щоб спозиціонувати, як по макету
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-bottom: 0.7;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 65px;
+    padding-bottom: 44px;
+  }
 }
-@media screen and (min-width: 1280px){
-        .contacts-container {
-                padding-top: 56px;
-                padding-bottom: 74px;
-        }
+@media screen and (min-width: 1280px) {
+  .contacts-container {
+    padding-top: 56px;
+    padding-bottom: 74px;
+  }
 }
-.contacts-subtitle{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1,25;
-        letter-spacing: 0.02em;
-        color: #5F5F5F;
-        margin-bottom: 16px;
+.contacts-subtitle {
+  //   !!!замінив на змінні
+  font-family: var(--font-main);
+  //  !!!зайве font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  //   !!!замінив на змінні
+  color: var(--accent-text-color);
+  margin-bottom: 16px;
 }
 
-@media screen and (min-width: 1024px){
-        .contacts-subtitle{
-                margin-bottom: 52px;
-                font-size: 16px;
-        }
+@media screen and (min-width: 1024px) {
+  .contacts-subtitle {
+    margin-bottom: 52px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-        .contacts-subtitle{
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 1,2;
-                letter-spacing: 0.02em;
-                color: #5F5F5F;
-        }
+  .contacts-subtitle {
+    //   !!!замінив на змінні
+    font-family: var(--font-main);
+    //  !!!зайве font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    //   !!!замінив на змінні
+    color: var(--accent-text-color);
+  }
 }
 
-.contacts-link{
-        margin-bottom: 16px;
+.contacts-link {
+  margin-bottom: 16px;
 }
-
-
-@media screen and (min-width: 1024px){
-        .contacts-link{
-                margin-bottom: 24px;
-        }
-}
-
-.contacts-name{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1,2;
-        letter-spacing: 0.02em;
-        color: #C79002;
-}
-
-@media screen and (min-width: 1024px){
-        .contacts-name{
-                margin-bottom: 8px;
-        }
-}
-.tel{
-        display: flex;
-
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.02em;
-        color: #494848;
-
-        height: 40px;
-        background: #FFFFFF;
-        border: 0.5px solid #F3C653;
-        border-radius: 2px;
-        text-decoration: none;
-        margin-left: 54px;
-        
-        // width: 100%;
-        padding: 8px;
-}
-
-
-.tel .tel-2+.tel-2{
-        margin-left: 10px;
-}
-
 
 @media screen and (min-width: 1024px) {
-        .tel{
-                margin-left: 0px;
-        }
+  .contacts-link {
+    margin-bottom: 24px;
+  }
 }
 
-.tel-1{
-        margin-left: 22px;
+.contacts-name {
+  //   !!!замінив на змінні
+  font-family: var(--font-main);
+  //  !!!зайве font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  //   !!!замінив на змінні
+  color: var(--style-text-color);
 }
 
-@media screen and (min-width: 1024px){
-        .tel-1{
-                margin-left: 0px;
-        }
+@media screen and (min-width: 1024px) {
+  .contacts-name {
+    margin-bottom: 8px;
+  }
 }
-.tel-2{
-        
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        color: #494848;
+.tel {
+  display: flex;
+
+  //  !!!зайве font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  //   !!!замінив на змінні
+  color: var(--title-text-color);
+
+  height: 40px;
+  background: #ffffff;
+  //   !!!замінив на змінні
+  border: 0.5px solid var(--footer-allelement-color);
+  border-radius: 2px;
+  text-decoration: none;
+  margin-left: 54px;
+
+  padding: 8px;
 }
 
-.contacts-adress{
-        display: block;
-        margin-left: auto;
+.tel .tel-2 + .tel-2 {
+  margin-left: 10px;
 }
 
-@media screen and (min-width: 1024px){
-        .contacts-adress{
-                margin-left: 0px;
-                margin-top: 24px;
-                
-                
-        }
+@media screen and (min-width: 1024px) {
+  .tel {
+    margin-left: 0px;
+  }
+}
+
+.tel-1 {
+  margin-left: 22px;
+}
+
+@media screen and (min-width: 1024px) {
+  .tel-1 {
+    margin-left: 0px;
+  }
+}
+.tel-2 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  //   !!!замінив на змінні
+  color: var(--title-text-color);
+}
+
+.contacts-adress {
+  display: block;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts-adress {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
 }
 .contacts-list {
-        margin-bottom: 32px;
-}
-
-
-@media screen and (min-width: 1024px){
-        .contacts-list{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                margin-bottom: 0px;
-        }
-}
-.contact-list{
-        display: flex;
-        align-items: center;
-                
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 1024px) {
-        .contact-list {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-        }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+}
+.contact-list {
+  display: flex;
+  align-items: center;
 }
 
-
-
-
-.contacts-tex{
-        display: flex;
-        align-items: center;
-        width: 260px;
-        height: 76px;
-        background: #FFFFFF;
-        border: 0.5px solid #F3C653;
-        border-radius: 2px;
-        text-decoration: none;
-        font-style: normal;
-        font-size: 16px;
-        line-height: 1,25;
-        letter-spacing: 0.01em;
-        color: #494848;
+@media screen and (min-width: 1024px) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-@media screen and (min-width: 1024px){
-        .contacts-tex{
-                width: 285px;
-                height: 65px;
-        }
+// !!!додав для стилізації адреси
+.contacts-adress address {
+  font-style: normal;
+  padding-right: 33px;
 }
 
-.contacts-svg{
-        width: 24px;
-        height: 24px;
-        fill: #C79002;
-        margin-left: 10px;
-        margin-right: 10px;
+@media screen and (min-width: 1024px) {
+  .contacts-adress address {
+    padding-right: 0;
+  }
 }
-.svg-phone{
-        margin-left: 0px;
-        margin-right: 8px;
-        width: 24px;
-        height: 24px;
-        fill: #C79002;
+
+.contacts-tex {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 76px;
+  background: #ffffff;
+  //!!! змінив на змінні
+  border: 0.5px solid var(--footer-allelement-color);
+  border-radius: 2px;
+  text-decoration: none;
+  //  !!!зайве font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  //   !!!змінив на змінні
+  color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts-tex {
+    width: 285px;
+    height: 65px;
+  }
+}
+
+.contacts-svg {
+  width: 24px;
+  height: 24px;
+  //   !!!змінив на змінні
+  fill: var(--style-text-color);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.svg-phone {
+  margin-left: 0px;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  //   !!!змінив на змінні
+  fill: var(--style-text-color);
 }
 
 // -------------MAP-------------
-.link-map{
-        height: 220px;
+.link-map {
+  height: 220px;
 }
-@media screen and (min-width: 1024px){
-        .link-map {
-                display: block;
-                height: 412px;
-                        
-        }
-}
-
-.contact-map{
-        display: block;
-        width: 384px;
-        height: 220px;
-}
-@media screen and (min-width: 1024px){
-        .contact-map{
-                display: block;
-                width: 533px;
-                height: 412px;
-                margin-left: 103px;
-        }
-}
-@media screen and (min-width: 1280px){
-        .contact-map{
-                display: block;
-                width: 634px;
-                margin-left: 108px;
-                margin-bottom: 0px;
-        }
-}
-@media screen and (min-width: 1024px){
-        .contacts-group{
-                display: block;
-                width: 294px;
-        }
+@media screen and (min-width: 1024px) {
+  .link-map {
+    display: block;
+    height: 412px;
+  }
 }
 
-@media screen and (min-width: 1280px){
-        .contacts-group {
-                display: block;
-                width: 368px;
-        }
+.contact-map {
+  display: block;
+  //   !!! прибрав зайвий елемент width: 384px;
+  height: 220px;
+}
+@media screen and (min-width: 1024px) {
+  .contact-map {
+    display: block;
+    width: 533px;
+    height: 412px;
+    margin-left: 103px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-map {
+    display: block;
+    width: 634px;
+    margin-left: 108px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contacts-group {
+    display: block;
+    width: 294px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-group {
+    display: block;
+    width: 368px;
+  }
 }
