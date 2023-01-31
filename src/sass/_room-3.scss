@@ -1,20 +1,15 @@
+
+/*текст*/
 .bk-color{
-    background-color: var(--menu-background);
-   
+    position: relative;
+    background-color: var(--menu-background);  
 }
 
-.title-div-3 {
-    margin-bottom: 28px;
-    margin-left: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
 .amet-3{
     padding-top: 32px;
-    padding-left: 194px;
+    padding-left: 179px;
+
 
     font-family: var(--font-secondary);
     font-size: 20px;
@@ -26,11 +21,10 @@
 @media screen and (min-width:1024px) {
     .amet-3{
         font-size:32px;
-    }
-}
 
 .mimino-3{
-    padding-left: 257px;
+    padding-left: 252px;
+
     margin-top: 8px;
 
     font-family: var(--font-logo);
@@ -45,7 +39,7 @@
 @media screen and (min-width:1024px) {
     .mimino-3{
         font-size: 64px;
-        
+
     }
 }
 
@@ -98,78 +92,203 @@ color: #7A7A7A;
 @media screen and (min-width:1280px){
     .title-div-3{
         padding-top: 72px;
-        max-width: 454px;
+
+        
         margin-bottom: 0;
+        margin-left: 0;
+        padding-left: 600px;
     }
     .amet-3{
         padding-top: 0;
-        padding-left: 0;
+        padding-left: 142px;
     }
     .mimino-3{
         margin-top: 3px;
-        padding-left: 0;
+        
+
     }
     .there{
         margin-top: 72px;
         padding-left: 0;
+
+        max-width: 454px;
+
     }
     .amett{
         margin-top: 24px;
         padding: 0;
+
+        max-width: 400px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1279px){
+    .title-div-3{
+        padding: 0;
+        margin: 0;
+    }
+    .amet-3{
+        
+         margin: 0;
+         padding: 0;
+         padding-left: 609px;
+         padding-top: 66px;
+    }
+    .mimino-3{
+        margin-top: 4px;
+         padding-left: 727px;
+    }
+    .there{
+        margin-top: 62px;
+        padding: 0;
+        padding-left: 510px;
+    }
+    .amett{
+        margin-top: 16px;       
+        padding-left: 510px;
     }
 }
 
+/*фото 1*/
+.room-3{
+    position: absolute;
+    top: 286px;
+    left: 30px;
 
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
 
 
 @media screen and (min-width:1280px){
     .room-3{
     
-    position: relative;
-    top: -414px;
-    right: -107px;
+
+    position: absolute;
+    top: -32px;
+    left: 180px;
     max-width: 460px;
-    
+
+    }
+    .room-3-height{
+        min-height: 956px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1279px){
+    .room-3{
+        position: absolute;
+        top: -32px;
+        right: 512px;
+
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     }
 }
 
 
-
-
-.room-3-btn{
-padding-left: 74px;
-margin-top: 28px;
-margin-bottom: 32px;
-}
-
-.room-3-marg{
-    margin-top: 16px;
-    
-}
-
-
-
+/*фото 2*/
 
 .room-flex{
-    position: relative;
-    left: 115px;
-    
-     display: flex;
+    display: flex;
     gap: 16px;
-
-    
 }
+.room-3-poz{
+    position: absolute;
+    left: 145px;
+    bottom: 216px;
 
-
-
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+.room-3-height{
+    min-height: 1050px;
+}
 @media screen and (min-width:1280px){
     .room-3-poz{
+position: absolute;
+top: 590px;
+left: 647px;
+gap: 40px;
+max-width: 548px;
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+ }
+}
+@media screen and (min-width:1024px) and (max-width:1279px){
+    .room-3-poz{
+position: absolute;
+top: 540px;
+left: 549px;
+gap: 40px;
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+ }
+}
+/*свайпер*/
 
-    }
+.swiper-pozition{
+    position: absolute;
+    right: 32px;
+    bottom: 164px;
+}
+.room-3-gap{
+    margin-left: 32px;
 }
 @media screen and (min-width:1280px){
+    .swiper-pozition{
+        position: absolute;
+        bottom: 40px;
+        right: 535px;
+    }
+    .room-3-gap{
+        margin-left: 34px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1279px){
+    .swiper-pozition{
+        position: absolute;
+        bottom: 48px;
+        right: 378px;
+    }
+    .room-3-gap{
+        margin-left: 34px;
+    }
+}
+
+/*кнопки*/
+
+.room-3-btn{
+    position: absolute;
+    bottom: 32px;
+    left: 114px;
+}
+.room-3-marg{
+    margin-top: 16px;
+}
+
+@media screen and (min-width:1280px){
     .room-3-btn{
-        padding-bottom: 196px;
+       position: absolute;
+       bottom: 182px;
+       left: 85px;
+       margin: 0;
+    }
+    .room-3-marg{
+        margin-top: 16px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1279px){
+    .room-3-height{
+        min-height: 838px; 
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1279px){
+    .room-3-btn{
+       position: absolute;
+       bottom: 159px;
+       left: 47px;
+       margin: 0;
+    }
+    .room-3-marg{
+        margin-top: 16px;
+
     }
 }
 
