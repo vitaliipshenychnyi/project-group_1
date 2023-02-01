@@ -140,11 +140,6 @@
   }
 }
 
-// .hotel__room-luxe_lhr{
-//     width: 244px;
-// }
-
-
 .hotel__room-luxe_btn {
   position: absolute;
   bottom: 32px;
@@ -165,7 +160,8 @@
   }
 }
 
-.hotel__room-luxe__picture_slider {
+// позиціонування контейнер слайдеру
+.test_new {
   display: flex;
   position: absolute;
   bottom: 216px;
@@ -174,7 +170,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .hotel__room-luxe__picture_slider {
+  .test_new {
     position: absolute;
     bottom: 104px;
     right: 549px;
@@ -183,31 +179,76 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .hotel__room-luxe__picture_slider {
+  .test_new {
     bottom: 112px;
     right: 647px;
   }
 }
 
-.swiper-btn-room_lux {
+// налаштування розмірів слайдеру для mobile
+.swiper-fix {
+  height: 245px;
+  width: 515px;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-fix {
+    height: 194px;
+    width: 428px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-fix {
+    height: 254px;
+    width: 548px;
+  }
+}
+
+// стилізація зображень слайдеру
+.swiper-slide img {
+  border-radius: 2px;
+  width: 100%;
+}
+
+// позиціонування нових кнопок слайдера
+.swiper-btn-wrapper_rum-lux {
   position: absolute;
+  display: flex;
+  gap: 32px;
   bottom: 164px;
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper-btn-room_lux {
+  .swiper-btn-wrapper_rum-lux {
     bottom: 40px;
     left: 377px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-btn-room_lux {
+  .swiper-btn-wrapper_rum-lux {
     left: 542px;
   }
 }
 
-.hotel_room_picture_slider_img {
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
+// стилізація нових кнопок слайдера
+.js-swiper4-button-next,
+.js-swiper4-button-prev {
+  padding: 0;
+
+  fill: #000000;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.js-swiper4-button-next:hover,
+.js-swiper4-button-next:focus,
+.js-swiper4-button-next:active,
+.js-swiper4-button-prev:hover,
+.js-swiper4-button-prev:focus,
+.js-swiper4-button-prev:active {
+  fill: #f3c653;
 }
