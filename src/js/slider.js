@@ -88,18 +88,19 @@ var swiper = new Swiper('.js-swiper_room-2', {
   },
 });
 
-// var swiper = new Swiper('.swiper_room-hero', {
-//   direction: 'horizontal',
-//   slidesPerView: 1,
-//   spaceBetween: 0,
-//   slidesPerGroup: 1,
-//   loop: true,
-//   loopFillGroupWithBlank: true,
-//   autoplay: {
-//     delay: 3000,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next-room',
-//     prevEl: '.swiper-button-prev-room',
-//   },
-// });
+// функціонал слайдеру сторінки ROOM
+var swiper = new Swiper('.js-swiper_room-hero', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 0,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: '.js-swiper6-button-next',
+    prevEl: '.js-swiper6-button-prev',
+  },
+});

@@ -18,9 +18,18 @@
 // позиціонування заголовку і тексту
 .room-description {
   position: absolute;
+  padding: 10px;
   bottom: 142px;
   left: 15px;
-  width: 325px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .room-description {
+    max-width: 345px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -110,6 +119,10 @@
 }
 
 //позиціонування лінка адреси
+.link-room {
+  background-color: var(--color-btn);
+}
+
 @media screen and (min-width: 1024px) {
   .link-room {
     position: absolute;
@@ -165,55 +178,95 @@
 
 // slide
 .my-swiper {
-  z-index: 0 !important;
+  z-index: 0;
 }
 
 // позиціонування лівої кнопки слайду
-.swiper-button-prev-room {
+.js-swiper6-button-prev {
   position: absolute;
+  z-index: 10;
   bottom: 350px;
   left: 15px;
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper-button-prev-room {
+  .js-swiper6-button-prev {
     bottom: 338px;
     left: 47px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-button-prev-room {
+  .js-swiper6-button-prev {
     bottom: 268px;
     left: 85px;
   }
 }
 
 // позиціонування правої кнопки слайду
-.swiper-button-next-room {
+.js-swiper6-button-next {
   position: absolute;
+  z-index: 10;
   bottom: 350px;
   right: 15px;
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper-button-next-room {
+  .js-swiper6-button-next {
     bottom: 338px;
     right: 47px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-button-next-room {
+  .js-swiper6-button-next {
     bottom: 268px;
     right: 85px;
   }
 }
 
 // стилізація кнопок слайду
-.swiper-button-prev-room,
-.swiper-button-next-room {
-  fill: var(--footer-allelement-color);
-  background: rgba(0, 0, 0, 0.65);
+.js-swiper6-button-prev,
+.js-swiper6-button-next {
+  padding: 0;
+  fill: var(--text-color-bg);
+  background: var(--home-hero-background);
+  line-height: 0;
   border: none;
+
+  transition: fill var(--transition-fast), background var(--transition-fast);
+}
+
+.js-swiper6-button-prev:hover,
+.js-swiper6-button-prev:focus,
+.js-swiper6-button-prev:active,
+.js-swiper6-button-next:hover,
+.js-swiper6-button-next:focus,
+.js-swiper6-button-next:active {
+  fill: var(--footer-allelement-color);
+  background: var(--color-btn);
+}
+
+// додаткові налаштування для маленьких еранів
+@media screen and (max-width: 370px) {
+  .room-description {
+    bottom: 104px;
+    max-width: 292px;
+  }
+
+  .hero__title--room {
+    font-size: 24px;
+  }
+
+  .hero__text--room {
+    font-size: 10px;
+  }
+
+  .room-description {
+    bottom: 124px;
+  }
+
+  .btn-room {
+    right: 15px;
+  }
 }
