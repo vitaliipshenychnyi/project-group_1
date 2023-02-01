@@ -66,6 +66,7 @@
 }
 .about-hotel-text {
   font-family: var(--font-secondary);
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
   color: #b4b4b4;
@@ -189,14 +190,14 @@
 }
 
 // позиціонування контейнер слайдеру
-.test_new {
+.swiper-container__about-hotel {
   position: absolute;
   bottom: 52px;
   left: -184px;
 }
 
 @media screen and (min-width: 1024px) {
-  .test_new {
+  .swiper-container__about-hotel {
     bottom: 64px;
     left: 47px;
     width: 428px;
@@ -204,8 +205,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .test_new {
-    bottom: 65px;
+  .swiper-container__about-hotel {
+    bottom: 72px;
     left: 85px;
     width: 548px;
   }
@@ -266,6 +267,10 @@
   background-color: transparent;
   border: none;
   outline: none;
+
+  transition: fill var(--transition-fast);
+  
+  cursor: pointer;
 }
 
 .js-swiper2-button-next:hover,

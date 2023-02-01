@@ -270,6 +270,10 @@
   background-color: transparent;
   border: none;
   outline: none;
+
+  transition: fill var(--transition-fast);
+
+  cursor: pointer;
 }
 
 .js-swiper3-button-next:hover,

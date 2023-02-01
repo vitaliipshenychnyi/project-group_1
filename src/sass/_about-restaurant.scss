@@ -1,12 +1,24 @@
 .about-rest {
   background-color: var(--accent-background);
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-rest {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-rest {
+    padding-bottom: 50px;
+  }
 }
 
 .about-rest-container {
   position: relative;
-
-  padding-top: 16px;
-  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -15,18 +27,9 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .about-rest-container {
-    padding-top: 120px;
-    padding-bottom: 32px;
     padding-right: 60px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .about-rest-container {
-    padding-bottom: 50px;
-    padding-right: 85px;
   }
 }
 
@@ -109,21 +112,23 @@
   }
 }
 
-.about-rest-interior-main img {
-  margin-left: auto;
+@media screen and (max-width: 1023px) {
+  .about-rest-interior-main img {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .about-rest-interior-main {
     position: absolute;
-    top: -32px;
+    top: -152px;
     right: 112px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about-rest-interior-main {
-    top: -33px;
+    top: -153px;
     right: 180px;
   }
 }
@@ -187,23 +192,23 @@
 }
 
 // позиціонування контейнер слайдеру
-.test-new {
+.swiper-container__about-restaurant {
   position: absolute;
   bottom: 72px;
   left: 84px;
 }
 
 @media screen and (min-width: 1024px) {
-  .test-new {
-    bottom: 96px;
+  .swiper-container__about-restaurant {
+    bottom: 64px;
     left: 536px;
     width: 428px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .test-new {
-    bottom: 118px;
+  .swiper-container__about-restaurant {
+    bottom: 68px;
     left: 647px;
     width: 548px;
   }
@@ -265,6 +270,10 @@
   background-color: transparent;
   border: none;
   outline: none;
+
+  transition: fill var(--transition-fast);
+
+  cursor: pointer;
 }
 
 .js-swiper-button-next:hover,
