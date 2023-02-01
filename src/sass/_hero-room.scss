@@ -1,6 +1,7 @@
 // добавляємо задній фон
 .room-hero {
   background-color: var(--accent-background);
+  overflow-x: hidden;
 }
 
 //прибираємо всі паддінги у main
@@ -89,35 +90,6 @@
   }
 }
 
-// додавання градієнту
-.room-box::after {
-  content: '';
-  display: block;
-  height: 143px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.55) 54.17%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-
-@media screen and (min-width: 1024px) {
-  .room-box::after {
-    height: 116px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .room-box::after {
-    height: 147px;
-  }
-}
-
 //позиціонування лінка адреси
 .link-room {
   background-color: var(--color-btn);
@@ -191,7 +163,7 @@
 
 @media screen and (min-width: 1024px) {
   .js-swiper6-button-prev {
-    bottom: 338px;
+    bottom: 340px;
     left: 47px;
   }
 }
@@ -213,7 +185,7 @@
 
 @media screen and (min-width: 1024px) {
   .js-swiper6-button-next {
-    bottom: 338px;
+    bottom: 340px;
     right: 47px;
   }
 }

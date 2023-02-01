@@ -134,10 +134,10 @@ var swiper = new Swiper('.js-swiper_room-hero', {
   loopFillGroupWithBlank: true,
   grabCursor: true,
   autoplay: {
-    delay: 3000,
+    delay: 6000,
     disableOnInteraction: false,
   },
-  speed: 800,
+  speed: 2000,
   navigation: {
     nextEl: '.js-swiper6-button-next',
     prevEl: '.js-swiper6-button-prev',
