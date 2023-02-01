@@ -2,8 +2,10 @@
   <div class="container details-container">
     <!-- text -->
     <div class="details__position">
-      <h2 class="details__title">MIMIHO</h2>
-      <h3 class="details__subtitle">Ресторан</h3>
+      <!-- замінив h2 на p -->
+      <p class="details__title">MIMIHO</p>
+      <!-- замінив h3 на h2 -->
+      <h2 class="details__subtitle">Ресторан</h2>
       <p class="details__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit.
@@ -97,6 +99,14 @@
         </div>
       </div>
     </div>
+    <div class="details__container-icon">
+      <svg class="det__icon-slider">
+        <use href="./images/icons.svg#arrow-left"></use>
+      </svg>
+      <svg class="det__icon-slider">
+        <use href="./images/icons.svg#arrow-right"></use>
+      </svg>
+    </div>
     <!-- buttons -->
     <div class="details__buttons">
       <ul class="list details__item">
@@ -117,17 +127,3 @@
     </div>
   </div>
 </section>
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button
-      class="close-button"
-      type="button"
-      aria-label="Button close modal menu"
-      data-modal-close
-    >
-      <svg class="icon-cross" width="24" height="24">
-        <use href="./images/icons.svg#icon-cross"></use>
-      </svg>
-    </button>
-  </div>
-</div>
