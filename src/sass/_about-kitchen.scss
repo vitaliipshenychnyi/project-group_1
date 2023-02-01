@@ -35,6 +35,12 @@
 
 @media screen and (min-width: 1024px) {
   .about-kitchen-wrapper-main {
+    margin-bottom: 142px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-kitchen-wrapper-main {
     margin-bottom: 162px;
   }
 }
@@ -102,6 +108,12 @@
   }
 }
 
+@media screen and (max-width: 413px) {
+  .about-kitchen-interior {
+    overflow: hidden;
+  }
+}
+
 .about-kitchen-interior-main img {
   margin-left: auto;
 }
@@ -163,6 +175,7 @@
 .gold {
   color: var(--style-text-color);
   max-width: 163px;
+  margin-top: 70px;
 }
 
 @media screen and (min-width: 1024px) {
