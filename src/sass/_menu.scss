@@ -111,6 +111,7 @@
     // width: 291px; 
     // margin-right: 60px;
     left: 0px;
+    // display: flex
 }
 
 // .menu-section {
@@ -183,7 +184,6 @@
 }
 
 .menu-course-title-dessert {
-    width: 257px;
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 500;
@@ -193,7 +193,7 @@
 
     color: var(--footer-background);
 
-    margin-bottom: 11px;
+    margin-bottom: 8px;
     /* margin-right: 60px; */
 }
 
@@ -218,6 +218,8 @@
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.02em;
+    margin-left: auto;
+    margin-right: 36px;
 
     color: var(--footer-background);
 }
