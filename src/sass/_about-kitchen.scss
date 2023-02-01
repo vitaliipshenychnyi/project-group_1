@@ -2,17 +2,17 @@
   background-color: var(--accent-background);
 }
 
-@media screen and (max-width: 1023px) {
-  .about-kitchen {
-    overflow: hidden;
-  }
-}
-
 .about-kitchen-container {
   position: relative;
 
   padding-top: 16px;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-kitchen-container {
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -145,7 +145,6 @@
 
 .about-kitchen-wrapper-details {
   display: flex;
-  align-items: center;
   column-gap: 20px;
 }
 
@@ -168,7 +167,14 @@
 
 @media screen and (min-width: 1024px) {
   .gold {
+    margin-top: 196px;
     max-width: 312px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gold {
+    margin-top: 188px;
   }
 }
 
@@ -193,4 +199,71 @@
     left: 647px;
     width: 548px;
   }
+}
+
+// налаштування розмірів слайдеру для mobile
+.swiper-fix {
+  height: 245px;
+  width: 515px;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-fix {
+    height: 194px;
+    width: 428px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-fix {
+    height: 254px;
+    width: 548px;
+  }
+}
+
+// стилізація зображень слайдеру
+.swiper-slide img {
+  border-radius: 2px;
+  width: 100%;
+}
+
+// позиціонування нових кнопок слайдера
+.swiper-btn-wrapper_about-kitchen {
+  display: flex;
+  gap: 32px;
+  margin-top: 297px;
+  justify-content: end;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-btn-wrapper_about-kitchen {
+    margin-top: 198px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-btn-wrapper_about-kitchen {
+    margin-top: 115px;
+  }
+}
+
+// стилізація нових кнопок слайдера
+.js-swiper3-button-next,
+.js-swiper3-button-prev {
+  padding: 0;
+
+  fill: #000000;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.js-swiper3-button-next:hover,
+.js-swiper3-button-next:focus,
+.js-swiper3-button-next:active,
+.js-swiper3-button-prev:hover,
+.js-swiper3-button-prev:focus,
+.js-swiper3-button-prev:active {
+  fill: #f3c653;
 }
