@@ -1,13 +1,19 @@
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+  backdrop-filter: blur(3px);
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 // позиціонування header
 .header-wrapper {
-  position: absolute;
-  width: calc(100% - 30px);
-  left: 15px;
-  z-index: 100;
   display: flex;
   align-items: center;
   padding-top: 16px;
@@ -18,15 +24,6 @@
   .header-wrapper {
     padding-top: 24px;
     padding-bottom: 33px;
-    width: calc(100% - 94px);
-    left: 47px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .header-wrapper {
-    width: calc(100% - 170px);
-    left: 85px;
   }
 }
 
