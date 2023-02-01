@@ -53,7 +53,7 @@ var swiper = new Swiper('.js-swiper_about-kitchen', {
 });
 
 // функціонал слайдеру секції rum-lux сторінки HOTEL
-var swiper = new Swiper('.js-swiper_rum-lux', {
+var swiper = new Swiper('.js-swiper_room-lux', {
   slidesPerView: 2,
   spaceBetween: 25,
   slidesPerGroup: 1,
@@ -70,8 +70,9 @@ var swiper = new Swiper('.js-swiper_rum-lux', {
   },
 });
 
+
 // функціонал слайдеру секції rum-2 сторінки HOTEL
-var swiper = new Swiper('.js-swiper_rum-2', {
+var swiper = new Swiper('.js-swiper_room-2', {
   slidesPerView: 2,
   spaceBetween: 25,
   slidesPerGroup: 1,

@@ -1,10 +1,31 @@
 .hotel__room-luxe {
   background-color: var(--accent-background);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel__room-luxe {
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hotel__room-luxe {
+    padding-top: 72px;
+  }
 }
 
 .hotel__room-luxe__container {
   position: relative;
   min-height: 1050px;
+}
+
+@media screen and (max-width: 1023px) {
+  .hotel__room-luxe__container {
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -23,7 +44,6 @@
 .hotel__room-luxe__top-text {
   font-family: var(--font-secondary);
   color: #b4b4b4;
-  padding-top: 32px;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
@@ -31,14 +51,7 @@
 
 @media screen and (min-width: 1024px) {
   .hotel__room-luxe__top-text {
-    padding-top: 62px;
     font-size: 32px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .hotel__room-luxe__top-text {
-    padding-top: 72px;
   }
 }
 
@@ -116,12 +129,15 @@
   }
 }
 
-.hotel__room-luxe__picture {
-  position: absolute;
-  top: 286px;
-  left: 155px;
+.hotel__room-luxe__picture img {
   border-radius: 2px;
   box-shadow: 2px 2px 60px 2px #00000040;
+}
+
+.hotel__room-luxe__picture {
+  position: absolute;
+  top: 254px;
+  left: 155px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -142,45 +158,45 @@
 
 .hotel__room-luxe_btn {
   position: absolute;
-  bottom: 32px;
+  bottom: 0;
   left: 95px;
 }
 
 @media screen and (min-width: 1024px) {
   .hotel__room-luxe_btn {
-    bottom: 145px;
+    bottom: 105px;
     left: 741px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hotel__room-luxe_btn {
-    bottom: 182px;
+    bottom: 142px;
     left: 959px;
   }
 }
 
 // позиціонування контейнер слайдеру
-.test_new {
+.swiper-container_room-2 {
   display: flex;
   position: absolute;
-  bottom: 216px;
+  bottom: 184px;
   right: 130px;
   gap: 16px;
 }
 
 @media screen and (min-width: 1024px) {
-  .test_new {
+  .swiper-container_room-2 {
     position: absolute;
-    bottom: 104px;
+    bottom: 64px;
     right: 549px;
     gap: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .test_new {
-    bottom: 112px;
+  .swiper-container_room-2 {
+    bottom: 72px;
     right: 647px;
   }
 }
@@ -212,22 +228,22 @@
 }
 
 // позиціонування нових кнопок слайдера
-.swiper-btn-wrapper_rum-lux {
+.swiper-btn-wrapper_room-lux {
   position: absolute;
   display: flex;
   gap: 32px;
-  bottom: 164px;
+  bottom: 132px;
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper-btn-wrapper_rum-lux {
-    bottom: 40px;
+  .swiper-btn-wrapper_room-lux {
+    bottom: 0;
     left: 377px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-btn-wrapper_rum-lux {
+  .swiper-btn-wrapper_room-lux {
     left: 542px;
   }
 }
