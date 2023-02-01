@@ -1,11 +1,8 @@
-<section class="bk-color">
-  <div class="container room-3-height">
-    <div class="title-div-3">
-      <!-- замінив h4 на h3 -->
+<section class="hotel-room-3">
+  <div class="room-3-container container">
+    <div class="hotel-room-3-info">
       <h3 class="amet-3" lang="en">Amet minim mollit non</h3>
-      <!-- замінив h4 на p -->
       <p class="mimino-3">MIMIHO</p>
-      <!-- замінив h3 на h2 -->
       <h2 class="there">ТРЬОХМІСНИЙ НОМЕР</h2>
       <p class="amett" lang="en">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -13,10 +10,10 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <!-- <div class="room-3-bad room-3">
+    <div class="room-3">
       <picture>
         <source
-          media="(min-width:1280px)"
+          media="(min-width: 1280px)"
           srcset="
             ./images/hotel/interior-desktop-1.jpg    1x,
             ./images/hotel/interior-desktop-1@2x.jpg 2x
@@ -24,7 +21,7 @@
           type="image/jpeg"
         />
         <source
-          media="(min-width:1024px)"
+          media="(min-width: 1024px)"
           srcset="
             ./images/hotel/interior-tablet-1.jpg    1x,
             ./images/hotel/interior-tablet-1@2x.jpg 2x
@@ -38,73 +35,82 @@
         />
       </picture>
     </div>
-    
-    <div class="room-3-bad room-flex room-3-poz">
-      <picture>
-        <source
-          media="(min-width:1280px)"
-          srcset="
-            ./images/hotel/slider/picture-desktop-2.jpg    1x,
-            ./images/hotel/slider/picture-desktop-2@2x.jpg 2x
-          "
-          type="image/jpeg"
-        />
-        <source
-          media="(min-width:1024px)"
-          srcset="
-            ./images/hotel/slider/picture-mobile-2.jpg    1x,
-            ./images/hotel/slider/picture-mobile-2@2x.jpg 2x
-          "
-          type="image/jpeg"
-        />
-        <img
-          srcset="./images/hotel/slider/picture-mobile-2@2x.jpg 2x"
-          src="./images/hotel/slider/picture-mobile-2.jpg"
-          alt="ванна"
-        />
-      </picture>
-      <picture>
-        <source
-          media="(min-width:1280px)"
-          srcset="
-            ./images/hotel/slider/picture-desktop-1.jpg    1x,
-            ./images/hotel/slider/picture-desktop-1@2x.jpg 2x
-          "
-          type="image/jpeg"
-        />
-        <source
-          media="(min-width:1024px)"
-          srcset="
-            ./images/hotel/slider/picture-mobile-1.jpg    1x,
-            ./images/hotel/slider/picture-mobile-1@2x.jpg 2x
-          "
-          type="image/jpeg"
-        />
-        <img
-          srcset="./images/hotel/slider/picture-mobile-1@2x.jpg 2x"
-          src="./images/hotel/slider/picture-mobile-1.jpg"
-          alt="кава"
-        />
-      </picture>
+
+    <!-- контейнер слайдеру -->
+    <div class="room-3-slider">
+      <div class="swiper swiper-room-3 js-swiper_about-restaurant">
+        <!-- обгортка зображень слайдеру -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/hotel/slider/picture-desktop-2.jpg    1x,
+                  ./images/hotel/slider/picture-desktop-2@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/hotel/slider/picture-mobile-2.jpg    1x,
+                  ./images/hotel/slider/picture-mobile-2@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                srcset="./images/hotel/slider/picture-mobile-2@2x.jpg 2x"
+                src="./images/hotel/slider/picture-mobile-2.jpg"
+                alt="ванна"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/hotel/slider/picture-desktop-1.jpg    1x,
+                  ./images/hotel/slider/picture-desktop-1@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/hotel/slider/picture-mobile-1.jpg    1x,
+                  ./images/hotel/slider/picture-mobile-1@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                srcset="./images/hotel/slider/picture-mobile-1@2x.jpg 2x"
+                src="./images/hotel/slider/picture-mobile-1.jpg"
+                alt="кава"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="swiper-btn-wrapper swiper-pozition">
-      <button class="swiper-button-prev_new" type="button">
+
+    <div class="swiper-btn-wrapper_about-restaurant">
+      <button class="js-swiper-button-prev" type="button">
         <svg width="32" height="32">
           <use href="./images/icons.svg#arrow-left"></use>
         </svg>
       </button>
-      <button class="swiper-button-next_new room-3-gap" type="button">
+      <button class="js-swiper-button-next" type="button">
         <svg width="32" height="32">
           <use href="./images/icons.svg#arrow-right"></use>
         </svg>
       </button>
-    </div> -->
+    </div>
 
     <div class="room-3-btn">
       <button class="btn btn-details btn-black">Детальніше</button>
-      <div class="room-3-marg">
-        <button class="btn btn-look-price btn-black">Переглянути ціни</button>
-      </div>
+      <button class="btn btn-look-price btn-black">Переглянути ціни</button>
     </div>
   </div>
 </section>
