@@ -1,22 +1,22 @@
-<section class="hotel__room-double">
-  <div class="hotel__room-double__container container">
-    <h2 class="hiden">Double Room Mimino</h2>
-    <div class="hotel__room-double__content">
-      <div class="hotel__room-double__info">
-        <h3 class="hotel__room-double__top-text">Amet minim mollit non</h3>
-        <!-- замінив h4 на p -->
-        <p class="hotel__room-double__logo">MIMIHO</p>
-        <!-- замінив h5 на h2 -->
-        <h2 class="hotel__room-double__title">ДВОМІСНИЙ НОМЕР</h2>
-        <p class="hotel__room-double__text">
+<section class="hotel__room-luxe">
+  <div class="hotel__room-luxe__container container">
+    <h2 class="hiden">Double Room Luxe Mimino</h2>
+    <div class="hotel__room-luxe__content">
+      <div class="hotel__room-luxe__info">
+        <h3 class="hotel__room-luxe__top-text">Amet minim mollit non</h3>
+        <h4 class="hotel__room-luxe__logo">MIMINO</h4>
+        <h5 class="hotel__room-luxe__title">
+          ДВОМІСНИЙ НОМЕР
+        </h5>
+        <p class="hotel__room-luxe__text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
       </div>
     </div>
-    <div class="hotel__room-double__picture">
-      <picture>
+    <div class="hotel__room-luxe__picture room_luxury">
+      <picture class="hotel__room-luxe_lhr">
         <source
           media="(min-width: 1280px)"
           srcset="
@@ -47,6 +47,74 @@
           loading="lazy"
         />
       </picture>
+    </div>
+
+    <div class="hotel__room-luxe__picture_slider">
+      </picture>
+      <picture class="hotel_room_picture_slider_img">
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./images/hotel/slider/picture-desktop-2.jpg    1x,
+            ./images/hotel/slider/picture-desktop-2@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width:1024px)"
+          srcset="
+            ./images/hotel/slider/picture-mobile-2.jpg    1x,
+            ./images/hotel/slider/picture-mobile-2@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          srcset="./images/hotel/slider/picture-mobile-2@2x.jpg 2x"
+          src="./images/hotel/slider/picture-mobile-2.jpg"
+          alt="ванна"
+        />
+      </picture>
+            <picture class="hotel_room_picture_slider_img">
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./images/hotel/slider/picture-desktop-1.jpg    1x,
+            ./images/hotel/slider/picture-desktop-1@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width:1024px)"
+          srcset="
+            ./images/hotel/slider/picture-mobile-1.jpg    1x,
+            ./images/hotel/slider/picture-mobile-1@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          srcset="./images/hotel/slider/picture-mobile-1@2x.jpg 2x"
+          src="./images/hotel/slider/picture-mobile-1.jpg"
+          alt="кава"
+        />
+    </div>
+    <div class="swiper-btn-room_lux">
+      <button class="swiper-button-prev_new" type="button">
+        <svg width="32" height="32">
+          <use href="./images/icons.svg#arrow-left"></use>
+        </svg>
+      </button>
+      <button class="swiper-button-next_new room-3-gap" type="button">
+        <svg width="32" height="32">
+          <use href="./images/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="hotel__room-luxe_btn">
+      <button class="btn btn-details btn-black">Детальніше</button>
+      <div class="room-3-marg">
+        <button class="btn btn-look-price btn-black">Переглянути ціни</button>
+      </div>
     </div>
   </div>
 </section>
