@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .hotel-room-3 {
+  .room-3-container {
     overflow: hidden;
   }
 }
@@ -241,7 +241,7 @@
 }
 
 // позиціонування нових кнопок слайдера
-.swiper-btn-wrapper_about-restaurant {
+.swiper-btn-wrapper_room-3 {
   display: flex;
   gap: 32px;
   margin-top: 246px;
@@ -249,7 +249,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper-btn-wrapper_about-restaurant {
+  .swiper-btn-wrapper_room-3 {
     position: absolute;
     margin-top: 280px;
     margin-left: 500px;
@@ -257,7 +257,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-btn-wrapper_about-restaurant {
+  .swiper-btn-wrapper_room-3 {
     margin-top: 340px;
     margin-left: 560px;
   }
