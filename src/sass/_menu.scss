@@ -39,16 +39,14 @@
     color: #F3C653;
     width: 236px;
     height: 48px;
-    background: #000000;
+    // background: #000000;
     border: 2px solid #FFFDEE;
     border-radius: 25px;
 
-    font-family: 'Montserrat';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px){
@@ -149,11 +147,6 @@
 }
 
 .menu-title {
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
 
     color: var(--footer-background);
 
