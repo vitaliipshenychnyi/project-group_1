@@ -234,6 +234,8 @@
   line-height: 0;
   border: none;
 
+  cursor: pointer;
+
   transition: fill var(--transition-fast), background var(--transition-fast);
 }
 
