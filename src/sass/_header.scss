@@ -3,11 +3,11 @@
   z-index: 100;
   width: 100%;
 
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(0.8px);
   background: linear-gradient(
     180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.55) 54.17%,
+    #000000 10%,
+    rgba(0, 0, 0, 0.55) 70.3%,
     rgba(0, 0, 0, 0) 100%
   );
 }
