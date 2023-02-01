@@ -37,6 +37,8 @@
   letter-spacing: 0.3em;
   color: var(--footer-allelement-color);
 
+  transition: color var(--transition-fast);
+
   // окрема стилізація для маленьких екранів
   @media screen and (max-width: 370px) {
     margin-right: auto;
@@ -48,6 +50,12 @@
     font-size: 64px;
     line-height: 1.07;
   }
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+  color: var(--style-text-color);
 }
 
 // стилі блоку (обгортки) навігація + соціальні мережі
@@ -89,6 +97,14 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--footer-allelement-color);
+
+  transition: color var(--transition-fast);
+}
+
+.footer-nav .link:hover,
+.footer-nav .link:focus,
+.footer-nav .link:active {
+  color: var(--style-text-color);
 }
 
 // стилі та геометрія елементів списку соціальних мереж
@@ -107,6 +123,8 @@
   color: var(--footer-allelement-color);
   border: 0.5px solid var(--footer-allelement-color);
 
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+
   @media screen and (max-width: 1023.98px) {
     border: none;
   }
@@ -121,6 +139,13 @@
     width: 143px;
     padding: 8px 12px;
   }
+}
+
+.footer__social-list .link:hover,
+.footer__social-list .link:focus,
+.footer__social-list .link:active {
+  color: var(--style-text-color);
+  border-color: var(--style-text-color);
 }
 
 .footer__social-list .link-name {
