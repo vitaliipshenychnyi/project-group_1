@@ -133,9 +133,9 @@
   color: var(--style-text-color);
 }
 
-.phone-number:hover + .phone-number,
-.phone-number:focus,
-.phone-number:active {
+.nav__phone:hover span,
+.nav__phone:focus span,
+.nav__phone:active span {
   color: var(--footer-allelement-color);
 }
 // -------------------------------------------
