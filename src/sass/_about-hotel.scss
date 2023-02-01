@@ -4,12 +4,6 @@
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 1023px) {
-  .about-hotel {
-    overflow: hidden;
-  }
-}
-
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .about-hotel {
     padding-top: 120px;
@@ -25,6 +19,12 @@
 
 .container.hotel-div {
   position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .container.hotel-div {
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -238,27 +238,27 @@
 }
 
 // позиціонування нових кнопок слайдера
-.swiper-btn-wrapper_new {
+.swiper-btn-wrapper_about-hotel {
   display: flex;
   gap: 32px;
   margin-top: 297px;
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper-btn-wrapper_new {
+  .swiper-btn-wrapper_about-hotel {
     margin-top: 198px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-btn-wrapper_new {
+  .swiper-btn-wrapper_about-hotel {
     margin-top: 115px;
   }
 }
 
 // стилізація нових кнопок слайдера
-.swiper2-button-next_new,
-.swiper2-button-prev_new {
+.js-swiper2-button-next,
+.js-swiper2-button-prev {
   padding: 0;
 
   fill: #000000;
@@ -268,11 +268,11 @@
   outline: none;
 }
 
-.swiper2-button-next_new:hover,
-.swiper2-button-next_new:focus,
-.swiper2-button-next_new:active,
-.swiper2-button-prev_new:hover,
-.swiper2-button-prev_new:focus,
-.swiper2-button-prev_new:active {
+.js-swiper2-button-next:hover,
+.js-swiper2-button-next:focus,
+.js-swiper2-button-next:active,
+.js-swiper2-button-prev:hover,
+.js-swiper2-button-prev:focus,
+.js-swiper2-button-prev:active {
   fill: #f3c653;
 }

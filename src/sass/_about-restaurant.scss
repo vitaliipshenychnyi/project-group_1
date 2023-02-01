@@ -2,18 +2,18 @@
   background-color: var(--accent-background);
 }
 
-@media screen and (max-width: 1023px) {
-  .about-rest {
-    overflow: hidden;
-  }
-}
-
 .about-rest-container {
   position: relative;
 
   padding-top: 16px;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 1023px) {
+    .about-rest-container {
+      overflow: hidden;
+    }
+  }
 
 @media screen and (min-width: 1024px) {
   .about-rest-container {
@@ -146,7 +146,6 @@
 
 .about-rest-wrapper-details {
   display: flex;
-  align-items: center;
   column-gap: 20px;
 }
 
@@ -223,7 +222,7 @@
 }
 
 // позиціонування нових кнопок слайдера
-.swiper-btn-wrapper_new-about-hotel {
+.swiper-btn-wrapper_about-restaurant {
   display: flex;
   gap: 32px;
   margin-top: 297px;
@@ -231,20 +230,20 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper-btn-wrapper_new-about-hotel {
+  .swiper-btn-wrapper_about-restaurant {
     margin-top: 198px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-btn-wrapper_new-about-hotel {
+  .swiper-btn-wrapper_about-restaurant {
     margin-top: 143px;
   }
 }
 
 // стилізація нових кнопок слайдера
-.swiper-button-next_new,
-.swiper-button-prev_new {
+.js-swiper-button-next,
+.js-swiper-button-prev {
   padding: 0;
 
   fill: #000000;
@@ -254,11 +253,11 @@
   outline: none;
 }
 
-.swiper-button-next_new:hover,
-.swiper-button-next_new:focus,
-.swiper-button-next_new:active,
-.swiper-button-prev_new:hover,
-.swiper-button-prev_new:focus,
-.swiper-button-prev_new:active {
+.js-swiper-button-next:hover,
+.js-swiper-button-next:focus,
+.js-swiper-button-next:active,
+.js-swiper-button-prev:hover,
+.js-swiper-button-prev:focus,
+.js-swiper-button-prev:active {
   fill: #f3c653;
 }
