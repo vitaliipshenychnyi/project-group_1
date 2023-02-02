@@ -124,7 +124,7 @@ var swiper = new Swiper('.js-swiper_room-2', {
 });
 
 // функціонал слайдеру сторінки ROOM
-var swiper = new Swiper('.js-swiper_room-hero', {
+var swiper = new Swiper('.swiper_room-hero', {
   direction: 'horizontal',
   slidesPerView: 1,
   spaceBetween: 0,
@@ -137,13 +137,12 @@ var swiper = new Swiper('.js-swiper_room-hero', {
     delay: 6000,
     disableOnInteraction: false,
   },
-  speed: 2000,
+  speed: 1000,
   navigation: {
-    nextEl: '.js-swiper6-button-next',
-    prevEl: '.js-swiper6-button-prev',
+    nextEl: '.swiper-button-next-room',
+    prevEl: '.swiper-button-prev-room',
   },
 });
-
 
 // функціонал слайдеру секції room-3 сторінки HOTEL
 var swiper = new Swiper('.js-swiper_room-3', {
