@@ -160,9 +160,13 @@
 }
 
 .room-3-btn .btn {
-  display: block;
   margin: 0 auto;
   margin-top: 16px;
+}
+
+.room-3-btn {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1024px) {
