@@ -244,3 +244,39 @@
     width: 220px;
   }
 }
+
+// окрема стилізація для маленьких екранів
+@media screen and (max-width: 370px) {
+  .menu_title {
+    font-size: 30px;
+  }
+
+  .menu-title {
+    font-size: 22px;
+  }
+
+  .menu-course-title,
+  .menu-course-title-dessert,
+  .menu-course-price {
+    font-size: 12px;
+  }
+
+  .menu-course-composition {
+    font-size: 8px;
+  }
+
+  .menu-course-weight {
+    font-size: 10px;
+    margin-right: auto;
+    width: 100%;
+    text-align: end;
+    margin-right: 20px;
+  }
+
+    .button-menu{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+}
