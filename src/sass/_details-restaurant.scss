@@ -158,7 +158,7 @@
   }
 }
 
-// стилізація списку модальних кнопок
+// позиціонування списку модальних кнопок
 @media screen and (min-width: 1024px) {
   .details-restaurant__btn-list {
     position: absolute;
@@ -174,16 +174,19 @@
   }
 }
 
-// додаткова стилізація останньої модальної кнопки
+// додаткове позиціонування останньої модальної кнопки
 .details-restaurant__btn-item:first-child {
   margin-bottom: 16px;
 }
 
 // позиціонування модальних кнопок
 .details-restaurant__btn {
-  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.link-block {
+  display: block;
 }
 
 // // СЛАЙДЕР
