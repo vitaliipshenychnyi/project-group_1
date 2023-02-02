@@ -124,13 +124,12 @@
   }
 }
 
-// -------------------------------------------
+// стилізація посилань на соціальні мережі
 .nav__phone:hover,
 .nav__phone:focus,
 .nav__phone:active {
   fill: var(--style-text-color);
   border-color: var(--style-text-color);
-  color: var(--style-text-color);
 }
 
 .nav__phone:hover span,
@@ -138,7 +137,6 @@
 .nav__phone:active span {
   color: var(--footer-allelement-color);
 }
-// -------------------------------------------
 
 @media screen and (max-width: 1023px) {
   .phone-number {
