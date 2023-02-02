@@ -233,14 +233,22 @@
     <!-- список з кнопками модальних вікон -->
     <ul class="details-restaurant__btn-list list">
       <li class="details-restaurant__btn-item">
-        <button class="btn details-restaurant__btn" type="button">
+        <button
+          class="btn"
+          type="button"
+          aria-label="Кнопка бронювання столику"
+          data-modal-open
+        >
           Забронювати столик
         </button>
       </li>
       <li class="details-restaurant__btn-item">
-        <button class="btn details-restaurant__btn" type="button">
-          Забронювати номер
-        </button>
+        <a
+          class="btn btn-look-menu link-block link"
+          href="./restaurant-page.html#menu"
+          aria-label="Кнопка посилання до пергляду меню"
+          >Переглянути меню</a
+        >
       </li>
     </ul>
   </div>
