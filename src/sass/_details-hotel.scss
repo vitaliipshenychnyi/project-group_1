@@ -280,6 +280,7 @@
   padding-top: 24px;
   padding-bottom: 40px;
   padding-right: 40px;
+  padding-left: 32px;
   overflow: hidden;
 }
 
@@ -309,23 +310,26 @@
 .details-hotel__wrapper-text {
   display: flex;
   flex-direction: column;
+  margin-right: 100px;
 }
 
 @media screen and (min-width: 1024px) {
   .details-hotel__wrapper-text {
-    // margin-left: 231px;
+    margin-right: 231px;
+    
   }
 }
 
 @media screen and (min-width: 1280px) {
   .details-hotel__wrapper-text {
-    // margin-left: 253px;
+    margin-right: 253px;
   }
 }
 
 // додаткова стилізація логотипу
 .logo-section {
   margin-bottom: 12px;
+  margin-right: -20px;
 
   font-size: 40px;
   line-height: calc(43 / 40);
@@ -369,6 +373,7 @@
   line-height: calc(15 / 12);
   letter-spacing: 0.02em;
   color: #bababa;
+  text-align: left;
 
   max-width: 259px;
 }
@@ -380,7 +385,13 @@
     font-size: 16px;
     line-height: calc(20 / 16);
 
-    max-width: 610px;
+    max-width: 549px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .details-hotel__text {
+    max-width: 595px;
   }
 }
 
