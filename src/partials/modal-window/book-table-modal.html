@@ -13,9 +13,11 @@
 
     <h1 class="book-title">ЗАБРОНЮВАТИ СТОЛИК</h1>
     <!-- форма модального вікна -->
-    <form class="form-set" name="booking-table-form" autocomplete="off">
-      <!-- <strong class="book-title">ЗАБРОНЮВАТИ СТОЛИК</strong> -->
-
+    <form
+      class="form-set table-form"
+      name="booking-table-form"
+      autocomplete="off"
+    >
       <!-- обгортка полів введення -->
       <div class="wrapper">
         <div class="form-field">
@@ -45,8 +47,7 @@
           />
           <label class="area-name" for="phone">Номер телефону</label>
         </div>
-      </div>
-      <div class="wrapper">
+
         <div class="form-field select">
           <select class="input" name="room-class" id="room-class" required>
             <option class="item" value="1">1</option>
@@ -72,10 +73,13 @@
           >
         </div>
       </div>
-      <button class="button-booking-table" type="submit">
-        ОФОРМИТИ БРОНЮВАННЯ
+      <button
+        class="button-booking-table btn-look-price btn-modal"
+        type="submit"
+      >
+        ЗАБРОНЮВАТИ СТОЛИК
       </button>
     </form>
   </div>
 </div>
-<!-- <script src="../../js/modal.js"></script> -->
+<script type="module" src="./index.js"></script>

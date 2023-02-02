@@ -52,13 +52,17 @@
 }
 
 // позиціонування полів форми для таблет та десктоп через opacity зго поля
-.wrapper>.form-field:nth-child(3) {
-pointer-events: none;
-opacity: 0;
+.room-form>.wrapper>.form-field:nth-child(3) {
+    pointer-events: none;
+    opacity: 0;
 
     @media screen and (max-width: 1023.98px) {
         display: none;
     }
+}
+
+.room-form>.wrapper>.form-field>.input {
+    appearance: none;
 }
 
 .select {
@@ -103,7 +107,6 @@ opacity: 0;
     color: var(--text-color-bg);
     width: 100%;
     padding: 20px 42px;
-    margin-top: 40px;
     margin-bottom: 0;
 
     font-weight: 500;
