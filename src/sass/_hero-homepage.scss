@@ -184,6 +184,14 @@
 
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+
+  transition: border-radius var(--transition-fast);
+}
+
+.hero__address-link:hover,
+.hero__address-link:focus,
+.hero__address-link:active {
+  border-radius: 50px;
 }
 
 // додаткове позиціонування адреси-посилання
@@ -211,6 +219,8 @@
   line-height: calc(15 / 12);
   letter-spacing: 0.01em;
   color: var(--maps-text-color);
+
+  transition: color var(--transition-fast);
 }
 
 @media screen and (min-width: 1024px) {
@@ -218,6 +228,20 @@
     font-size: 16px;
     line-height: calc(20 / 16);
   }
+}
+
+// стилізація посилань на адресу
+.hero__address-link:hover,
+.hero__address-link:focus,
+.hero__address-link:active {
+  border-color: var(--text-color-bg);
+  background-color: var(--color-btn);
+}
+
+.hero__address-link:hover address,
+.hero__address-link:focus address,
+.hero__address-link:active address {
+  color: var(--footer-allelement-color);
 }
 
 .location-icon {
