@@ -1,16 +1,12 @@
 .contacts {
-  // !!!замінив на змінні
   background: var(--accent-background);
 }
 .contacts-title {
-  // !!!зайве  font-family: 'Film P3';
   font-family: var(--font-logo);
-  //  !!!зайве font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
-  //   !!!замінив на змінні
   color: var(--title-text-color);
 
   margin-bottom: 12px;
@@ -19,9 +15,7 @@
 @media screen and (min-width: 1024px) {
   .contacts-title {
     margin-bottom: 8px;
-    // !!!зайве  font-family: 'Film P3';
     font-family: var(--font-logo);
-    //  !!!зайве font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 1.07;
@@ -35,7 +29,6 @@
 @media screen and (min-width: 1024px) {
   .contacts-container {
     display: flex;
-    //     !!!додав align-items: flex-end; щоб спозиціонувати, як по макету
     align-items: flex-end;
     flex-direction: column;
     padding-top: 56px;
@@ -44,6 +37,8 @@
     flex-direction: row;
     padding-top: 65px;
     padding-bottom: 44px;
+
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -53,14 +48,11 @@
   }
 }
 .contacts-subtitle {
-  //   !!!замінив на змінні
   font-family: var(--font-main);
-  //  !!!зайве font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  //   !!!замінив на змінні
   color: var(--accent-text-color);
   margin-bottom: 16px;
 }
@@ -74,14 +66,11 @@
 
 @media screen and (min-width: 1280px) {
   .contacts-subtitle {
-    //   !!!замінив на змінні
     font-family: var(--font-main);
-    //  !!!зайве font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    //   !!!замінив на змінні
     color: var(--accent-text-color);
   }
 }
@@ -97,14 +86,11 @@
 }
 
 .contacts-name {
-  //   !!!замінив на змінні
   font-family: var(--font-main);
-  //  !!!зайве font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  //   !!!замінив на змінні
   color: var(--style-text-color);
 }
 
@@ -116,19 +102,16 @@
 .tel {
   display: flex;
 
-  //  !!!зайве font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
-  //   !!!замінив на змінні
   color: var(--title-text-color);
 
   height: 40px;
   background: #ffffff;
-  //   !!!замінив на змінні
   border: 0.5px solid var(--footer-allelement-color);
   border-radius: 2px;
   text-decoration: none;
@@ -160,7 +143,6 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  //   !!!замінив на змінні
   color: var(--title-text-color);
 }
 
@@ -200,7 +182,6 @@
   }
 }
 
-// !!!додав для стилізації адреси
 .contacts-adress address {
   font-style: normal;
   padding-right: 33px;
@@ -218,15 +199,12 @@
   width: 260px;
   height: 76px;
   background: #ffffff;
-  //!!! змінив на змінні
   border: 0.5px solid var(--footer-allelement-color);
   border-radius: 2px;
   text-decoration: none;
-  //  !!!зайве font-style: normal;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
-  //   !!!змінив на змінні
   color: var(--title-text-color);
 }
 
@@ -240,7 +218,6 @@
 .contacts-svg {
   width: 24px;
   height: 24px;
-  //   !!!змінив на змінні
   fill: var(--style-text-color);
   margin-left: 10px;
   margin-right: 10px;
@@ -250,7 +227,6 @@
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  //   !!!змінив на змінні
   fill: var(--style-text-color);
 }
 
@@ -265,25 +241,20 @@
   }
 }
 
-.contact-map {
-  display: block;
-  //   !!! прибрав зайвий елемент width: 384px;
+.contact-map iframe {
   height: 220px;
+  width: 384px;
 }
+
 @media screen and (min-width: 1024px) {
-  .contact-map {
-    display: block;
-    width: 533px;
+  .contact-map iframe {
+    width: 535px;
     height: 412px;
-    margin-left: 103px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .contact-map {
-    display: block;
+  .contact-map iframe {
     width: 634px;
-    margin-left: 108px;
-    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -297,5 +268,22 @@
   .contacts-group {
     display: block;
     width: 368px;
+  }
+}
+
+// окрема стилізація для маленьких екранів
+@media screen and (max-width: 413px) {
+  .contact-map iframe {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+    height: 220px;
+  }
+
+  .small-tel {
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
   }
 }

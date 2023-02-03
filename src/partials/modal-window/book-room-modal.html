@@ -20,25 +20,25 @@
           class="input"
           type="text"
           name="name"
-          id="name"
+          id="name_hotel"
           placeholder="Ваше ім’я"
           pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
           minlength="2"
         />
-        <label class="area-name" for="name">На кого забронювати номер?</label>
+        <label class="area-name" for="name_hotel">На кого забронювати номер?</label>
       </div>
       <div class="form-field">
         <input
           class="input"
           type="tel"
           name="phone"
-          id="phone"
+          id="phone_hotel"
           placeholder="+38 (___) ___-__-__"
           pattern="\+\[0-9]{12}"
           title="+38 (___) ___-__-__"
           maxlength="19"
         />
-        <label class="area-name" for="phone">Номер телефону</label>
+        <label class="area-name" for="phone_hotel">Номер телефону</label>
       </div>
       <div class="form-field empty">
         <input
@@ -54,7 +54,7 @@
         <label class="area-name" for="empty-slot"></label>
       </div>
       <div class="form-field select">
-        <select class="input" name="room-class" id="room-class" required>
+        <select class="input" name="room-class" id="room-class">
           <option class="item" value="luxe">Двомісний люкс</option>
           <option class="item" value="standart">Двомісний стандарт</option>
           <option class="item" value="standart+">Трьохмісний стандарт</option>

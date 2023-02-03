@@ -24,34 +24,36 @@
           class="input"
           type="text"
           name="name"
-          id="name"
+          id="name_restaurant"
           placeholder="Ваше ім’я"
           pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
           minlength="2"
         />
-        <label class="area-name" for="name">На кого забронювати столик?</label>
+        <label class="area-name" for="name_restaurant"
+          >На кого забронювати столик?</label
+        >
       </div>
       <div class="form-field">
         <input
           class="input"
           type="tel"
           name="phone"
-          id="phone"
+          id="phone_restaurant"
           placeholder="+38 (___) ___-__-__"
           pattern="\+\[0-9]{12}"
           title="+38 (___) ___-__-__"
           maxlength="19"
         />
-        <label class="area-name" for="phone">Номер телефону</label>
+        <label class="area-name" for="phone_restaurant">Номер телефону</label>
       </div>
 
       <div class="form-field select">
-        <select class="input" name="room-class" id="room-class" required>
+        <select class="input" name="table-selection" id="table-selection">
           <option class="item" value="1">1</option>
           <option class="item" value="2" selected>2</option>
           <option class="item" value="3">3</option>
         </select>
-        <label class="area-name" for="volume"
+        <label class="area-name" for="table-selection"
           >Столик на яку кількість осіб?</label
         >
       </div>
@@ -59,13 +61,13 @@
         <input
           class="input"
           type="date"
-          name="table booking date"
+          name="table-booking-date"
           required
-          id="checkout"
+          id="table-booking-date"
           min="2023-01-01"
           max="2030-01-01"
         />
-        <label class="area-name" for="table booking date"
+        <label class="area-name" for="table-booking-date"
           >На яку дату бронювати?</label
         >
       </div>
