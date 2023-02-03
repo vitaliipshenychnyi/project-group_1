@@ -2,7 +2,9 @@
   <div class="hero-container container">
     <!-- обгортка текстового контенту -->
     <div class="hero-hotel__wrapper-text">
-      <h1 class="hero-hotel__title animate__animated animate__flipInX">MIMIHO</h1>
+      <h1 class="hero-hotel__title animate__animated animate__flipInX">
+        MIMIHO
+      </h1>
       <h2 class="hero-hotel__subtitle">Готель</h2>
     </div>
 
@@ -25,16 +27,21 @@
 
       <ul class="hero__btn-list list">
         <li class="hero__btn-item">
-          <button class="btn" type="button" aria-label="Кнопка бронювання номеру" data-modal2-open>
+          <button
+            class="btn js-open-modal"
+            type="button"
+            aria-label="Кнопка бронювання номеру"
+            data-modal="2"
+          >
             Забронювати номер
           </button>
         </li>
         <li class="hero__btn-item">
           <button
-            class="btn btn-look-price"
+            class="btn btn-look-price js-open-modal"
             type="button"
             aria-label="Кнопка посилання до пергляду цін"
-            data-modal3-open
+            data-modal="3"
           >
             Переглянути ціни
           </button>
