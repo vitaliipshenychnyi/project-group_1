@@ -20,8 +20,8 @@
         </select>
         <label class="area-name" for="category">Категорія номеру</label>
       </div>
-      <!-- <div class="form-field">
-        <input
+      <div class="form-field">
+        <!-- <input
           class="input"
           type=" "
           name="empty-slot"
@@ -31,8 +31,8 @@
           title=" "
           maxlength=" "
         />
-        <label class="area-name" for="empty-slot"></label>
-      </div> -->
+        <label class="area-name" for="empty-slot"></label> -->
+      </div>
       <div class="form-field select">
         <select class="price-form-amount input" id="amount" name="amount">
           <option value="n1" selected>1</option>
@@ -57,7 +57,11 @@
         <label class="area-name" for="price">грн</label>
       </div>
     </div>
-    <button class="button-booking btn-look-price btn-modal" type="submit">
+    <button
+      class="button-booking btn-look-price btn-modal js-modal-close"
+      type="submit"
+      data-modal-close
+    >
       ЗАБРОНЮВАТИ НОМЕР
     </button>
   </form>
