@@ -316,7 +316,6 @@
 @media screen and (min-width: 1024px) {
   .details-hotel__wrapper-text {
     margin-right: 231px;
-    
   }
 }
 
@@ -396,6 +395,14 @@
 }
 
 // стилізація списку модальних кнопок
+@media screen and (max-width: 1023px) {
+  .details-hotel__btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .details-hotel__btn-list {
     position: absolute;
